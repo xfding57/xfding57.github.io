@@ -1,0 +1,301 @@
+body {
+  background-color:rgb(0,0,0);
+  background-size:auto;
+  font-family:'Palatino Linotype';
+  font-size:20px;
+  color:rgb(222,222,222);
+}
+
+/* ================================= TEXT ================================= */
+
+.HeadingLevel1 {
+  font-family:Helvetica
+}
+
+.HeadingLevel2 {
+  font-family:Helvetica
+}
+
+.FigureCaption {
+  text-decoration:none;
+  line-height:2;
+  font-family:Helvetica;
+  font-size:13px;
+  font-weight:lighter;
+}
+
+/* ================================= HEADER ================================= */
+
+.BlurBGhome {background-image:url("_/Header_FFS_because_spring_desktop.jpg")}
+.BlurBGabout {background-image:url("_/Header_FFS_quiet_spring_desktop.jpg")}
+.BlurBGwork {background-image:url("_/Header_FFS_bloom_two_desktop.jpg")}
+.BlurBGresearch {background-image:url("_/Header_FFS_let_it_in_desktop.jpg")}
+.BlurBGmedia {background-image:url("_/Header_FFS_everorange_desktop.jpg")}
+.BlurBGcontact {background-image:url("_/Header_FFS_snow_cones_desktop.jpg")}
+
+.BlurBGhome, .BlurBGabout, .BlurBGwork, .BlurBGresearch, .BlurBGmedia, .BlurBGcontact{
+  /* Add the blur effect */
+  filter:blur(0px);
+  -webkit-filter:blur(0px);
+  /* Center and scale the image nicely */
+  position:absolute;
+  top:0%; 
+  left:0%;
+  right:0%;
+  height:55%;
+  opacity:0.8;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.TextBox {
+  font-size:25px;
+  position:absolute;
+  border:1.5px solid rgba(222,222,222,1);
+  background-color:rgba(0,0,0,0.5);
+  transform:translate(-50%,-50%);
+  width:60%;
+  top:22.5%;
+  left:50%;
+  padding:10px;
+  text-align:center;
+  z-index:2;
+}
+
+.LinkBox {
+  font-size:25px;
+  position:absolute;
+  border:1.5px solid rgba(222,222,222,0);
+  background-color:rgba(0,0,0,0);
+  transform:translate(0,-50%);
+  top:45%;
+  left:0;
+  right:0;
+  padding:10px;
+  text-align:center;
+  z-index:2;
+  /*
+  border:1.5px solid rgba(222,222,222,1);
+  background-color:rgba(0,0,0,0.5);
+  width:80%;
+  left:50%;
+  */
+}
+
+.FigureCaptionBox {
+  position:absolute;
+  top:1%;
+  left:1%;
+  width:auto;
+  padding:1px;
+  padding-left:10px;
+  padding-right:10px;
+  background-color:rgba(0,0,0,0.5);
+  text-align:center;
+  z-index:2;
+}
+
+/* ================================= BODY ================================= */
+
+.BodyBox {
+  position:absolute;
+  top:55%;
+  left:50%;
+  width:900px;
+  transform:translate(-50%,0%);
+  z-index:2;
+  background-color:rgba(255,255,255,0);
+}
+
+/* ================================= FOOTER ================================= */
+
+.FooterBox {
+  position:absolute;
+  left:0%;
+  right:0%;
+  height:auto;
+  padding-top:100px;
+  padding-bottom:50px;
+  text-align:center;
+  background-color:rgba(255,255,255,0);
+}
+
+.affiliationzoom {
+  padding-left:25px;
+  padding-right:25px;
+  background-color:rgba(255,255,255,0);
+  transition:transform 0.3s;
+  margin:10px 20px;
+  height:50px;
+  width:auto;
+  border:0;
+  cursor:pointer;
+}
+
+.affiliationzoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+/* ================================= LINKS ================================= */
+
+a:link, a:visited, a:hover, a:active {
+  color:rgb(222,222,222);
+  background-color:transparent;
+  text-decoration:none;
+}
+
+.MainLinks:hover {
+  text-decoration:underline
+}
+
+.MainLinks:hover {
+  color:rgba(0,0,0,1);
+  text-shadow:0px 0px 5px rgba(222,222,222,0);
+  -webkit-transition-duration:0.4s;
+  transition-duration:0.4s;
+}
+
+.BodyLinks {
+  text-decoration:none;
+  border-bottom:1px dotted white;
+  font-family:Helvetica;
+  font-size:20px;
+}
+
+.ReferenceLink {
+  text-decoration:none;
+  border-bottom:1px dotted white
+}
+
+.BodyLinks:hover,
+.ReferenceLink:hover {
+  color:rgba(222,222,222,0.5);
+  -webkit-transition-duration:0.4s;
+  transition-duration:0.4s;
+}
+
+@-webkit-keyframes animatetop {from {top:-300px; opacity:0} to {top:0; opacity:1}}
+
+@keyframes animatetop {from {top:-300px; opacity:0} to {top:0; opacity:1}}
+
+/* ================================= SLIDESHOW ================================= */
+
+.mySlides {display:none;}
+
+.slideshow-img {
+  display:block;
+  height:500px;
+  margin:auto;
+}
+
+.slideshow-container {
+  position:relative;
+  height:auto;
+  margin:auto;
+}
+
+.dot {
+  cursor:pointer;
+  height:13px;
+  width:13px;
+  margin:0 2px;
+  background-color:#bbb;
+  border-radius:50%;
+  display:inline-block;
+  transition:background-color 0.6s ease;
+}
+
+.active, .dot:hover {background-color:#717171}
+
+.fade {
+  -webkit-animation-name:fade;
+  -webkit-animation-duration:1.5s;
+  animation-name:fade;
+  animation-duration:1.5s;
+}
+
+@-webkit-keyframes fade {from {opacity:0.4} to {opacity:1}}
+
+@keyframes fade {from {opacity:0.4} to {opacity:1}}
+
+.textoverslidesdiv {
+  float:left;
+  position:absolute;
+  z-index:1000;
+  height:auto;
+  width:100%;
+  padding-left:25px;
+  background-color:rgba(0,0,0,0.0);
+  color:rgba(255,255,255,1)">
+}
+
+.textoverslidestext {color:white}
+
+.usaskspan1 {
+  background-color:rgb(255,203,0);
+  padding-left:15px
+}
+
+.usaskspan2 {
+  background-color:rgb(0,105,62);
+  padding-left:15px;
+  padding-right:15px
+}
+
+.uwospan1 {
+  background-color:rgb(255,255,255);
+  padding-left:15px
+}
+
+.uwospan2 {
+  background-color:rgb(79,38,131);
+  padding-left:15px;
+  padding-right:15px
+}
+
+.ryersonspan1 {
+  background-color:rgb(255,220,0);
+  padding-left:15px
+}
+
+.ryersonspan2 {
+  background-color:rgb(0,76,155);
+  padding-left:15px;
+  padding-right:15px
+}
+
+/* ================================= SCROLLBAR ================================= */
+
+::-webkit-scrollbar {width:15px}
+::-webkit-scrollbar-track {background:rgb(0,0,0)}
+::-webkit-scrollbar-thumb {background:rgb(50,50,50)}
+::-webkit-scrollbar-thumb:hover {background:rgb(100,100,100)}
+
+/* ================================= DROPDOWN MENU ================================= */
+
+.dropdown {
+  position:relative;
+  display:inline-block;
+}
+
+.dropdown-content {
+  position:absolute;
+  display:none;
+  background-color: rgba(0,0,0,1);
+  z-index:3;
+}
+
+.dropdown-content a {
+  font-size:17px;
+  color: rgba(222,222,222,1);
+  text-align:left;
+  padding:15px;
+  text-decoration:none;
+  display:block;
+}
+
+.dropdown:hover .dropdown-content {display:block}
+
+.dropdown-content a:hover {color:rgba(222,222,222,0.5)}
