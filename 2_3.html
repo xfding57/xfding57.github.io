@@ -1,0 +1,318 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+    <head>
+        <link rel="stylesheet" href="2.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <title>Xiao Fan Ding, M.Sc.</title>
+        <meta charset="utf-8">
+        <!-- jQuery Show/Hide Effect -->
+        <script src="jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".BodyToggle1").click(function(){
+                    $(".ToggleMessage1").toggle();
+                });
+            });
+            $(document).ready(function(){
+                $(".BodyToggle2").click(function(){
+                    $(".ToggleMessage2").toggle();
+                });
+            });
+            $(document).ready(function(){
+                $(".BodyToggle3").click(function(){
+                    $(".ToggleMessage3").toggle();
+                });
+            });
+            $(document).ready(function(){
+                $(".BodyToggle4").click(function(){
+                    $(".ToggleMessage4").toggle();
+                });
+            });
+            $(document).ready(function(){
+                $(".BodyToggle5").click(function(){
+                    $(".ToggleMessage5").toggle();
+                });
+            });
+        </script>
+        <style type="text/css">
+            .BodyToggle1,
+            .BodyToggle2,
+            .BodyToggle3,
+            .BodyToggle4,
+            .BodyToggle5 {
+                text-decoration:none;
+                border-bottom:1px dotted white;
+                font-family:Helvetica;
+                font-size:20px;
+                cursor:pointer;
+            }
+            .BodyToggle1:hover,
+            .BodyToggle2:hover,
+            .BodyToggle3:hover,
+            .BodyToggle4:hover,
+            .BodyToggle5:hover {
+                color:rgba(222,222,222,0.5);
+                -webkit-transition-duration:0.4s;
+                transition-duration:0.4s;
+            }
+            .ToggleMessage1,
+            .ToggleMessage2,
+            .ToggleMessage3,
+            .ToggleMessage4,
+            .ToggleMessage5 {
+                display:none
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="BlurBGresearch"></div>
+        <a href="https://fiftyfootshadows.net/" target="_blank">
+            <div class="FigureCaptionBox">
+                <i class="FigureCaption">Photographer: Fifty Foot Shadows</i>
+            </div>
+        </a>
+        <div class="TextBox">
+            <h1>Xiao Fan Ding</h1>
+            <p>BSc&emsp;MSc</p>
+        </div>
+        <div class="LinkBox">
+            <a class="MainLinks" href="2_0.html">&emsp;Home&emsp;</a>
+            <a class="MainLinks" href="2_1.html">&emsp;About&emsp;</a>
+            <a class="MainLinks" href="2_2.html">&emsp;Vitae&emsp;</a>
+            <a class="MainLinks" style="text-decoration:underline" href="2_3.html">&emsp;Research&emsp;</a>
+            <a class="MainLinks" href="2_4.html">&emsp;Memory&emsp;</a>
+            <a class="MainLinks" href="2_5.html">&emsp;Contact&emsp;</a>
+        </div>
+        <!-- Body -->
+        <div class="BodyBox">
+            <h2 class="HeadingLevel1">Research</h2>
+            <p class="HeadingLevel2" align="center">
+                <b>University of Saskatchewan</b>
+            </p>
+            <p align="justify">
+                Some of my current work at the University of Saskatchewan, includes computed tomography at the Canadian Light Source.
+                The Light Source has dedicated beamlines for photons from mid infrared to hard x-rays.
+                At the facility I work at, BMIT (Biomedical Imaging and Therapy), we refine hard x-rays from the synchrotron for imaging.
+            </p>
+            <div style="line-height:2.0">
+                <u class="BodyToggle5">Dynamic CT</u>
+                <div style="line-height:normal">
+                    <div class="ToggleMessage5 fade">
+                        <p align="justify">
+                            The Canadian Light Source is a third generation synchrotron.
+                            One of the advantages of such a facitlity is that CT scans can be performed remarkably faster than a laboratory scanner.
+                            One technqiue that takes advantage of this speed is dynamic CT, scanning samples while undergoing some change.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="border-bottom:3px dotted rgba(222,222,222,0.5)"><br></div>
+            <p class="HeadingLevel2" align="center">
+                <b>University of Western Ontario</b>
+            </p>
+            <p align="justify">
+                When I was part of the xMR Labs at The University of Western Ontario, I worked on medical implant safety during Magnetic Resonance Imaging.
+                At the time, implant safety was only assessed through experimental means standardized by various organizations (ASTM, ISO, IEC, NEMA, etc.).
+                I was working on testing implant safety via a reliable computer simulation and verification through standard experiments.
+            </p>
+            <div style="line-height:2.0">
+                <u class="BodyToggle1">FEM Simulations</u>
+                <div style="line-height:normal">
+                    <div class="ToggleMessage1 fade">
+                        <p align="justify">
+                            I mainly did simulations in COMSOL Multiphysics (COMSOL Inc., Sweden), a finite element method solver.
+                            I used it to calculate the magnetostatics of geometrically simple objects rotating in a uniform static magnetic field.
+                            I started off with a sphere and infinitely long cylinder.
+                            The solutions to both cases are known so the simulated results can be verified with known analytic solutions.
+                        </p>
+                        <div id="slideshow1" class="slideshow-container">
+                            <div class="mySlides fade"><img class="slideshow-img" style="width:90%; height:auto" src="_/uwo/Modeling.jpg"></div>
+                            <div class="mySlides fade"><img class="slideshow-img" style="width:auto; height:407" src="_/uwo/COMSOL_sph_y.gif"></div>
+                            <div class="mySlides fade"><img class="slideshow-img" style="width:auto; height:407" src="_/uwo/COMSOL_cyl_y.gif"></div>
+                            <div class="mySlides fade"><img class="slideshow-img" style="width:90%; height:auto" src="_/uwo/ModelingDataSphereCylinder.jpg"></div>
+                            <br>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
+                                <span class="dot" onclick="currentSlide(2, slideshow1)"></span>
+                                <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
+                                <span class="dot" onclick="currentSlide(4, slideshow1)"></span>
+                            </div>
+                        </div>
+                        <p align="justify">
+                            On to even more cylinders. These will be machined out of stainless-steel grades 304 and 316 later for experimental verification.
+                            The two diameters used were 0.5 and 0.25 inches with lengths of 3, 5, 7, and 9 cm.
+                            The supplier of the raw material is an American company, so the rods were sold in inches but being a Canadian institution, the lengths were machined to specifications in metric.
+                        </p>
+                        <div id="slideshow2" class="slideshow-container">
+                            <div class="mySlides fade"><img class="slideshow-img" style="width:90%; height:auto" src="_/uwo/CYL_COMSOL.jpg"></div>
+                            <div class="mySlides fade"><img class="slideshow-img" style="width:90%; height:auto" src="_/uwo/CYL_3cm.jpg"></div>
+                            <div class="mySlides fade"><img class="slideshow-img" style="width:auto; height:407" src="_/uwo/CYL_3cm_B.gif"></div>
+                            <div class="mySlides fade"><img class="slideshow-img" style="width:90%; height:auto" src="_/uwo/CYL_3cm_MATLAB.jpg"></div>
+                            <br>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, slideshow2)"></span>
+                                <span class="dot" onclick="currentSlide(2, slideshow2)"></span>
+                                <span class="dot" onclick="currentSlide(3, slideshow2)"></span>
+                                <span class="dot" onclick="currentSlide(4, slideshow2)"></span>
+                            </div>
+                        </div>
+                        <p align="justify">
+                            I should mention that the whole point is to computationally find the torque induced on metal rods due to exposure to a static magnetic field.
+                            The simulated results from COMSOL are compared with experimental measurements.
+                        </p>
+                        <img class="slideshow-img" style="width:90%; height:auto" src="_/uwo/SS304_SS316.jpg">
+                        <p align="justify">
+                            Something unexpected that came up was finding the magnetic susceptibility of stainless steel.
+                        </p>
+                        <img class="slideshow-img" style="width:90%; height:auto" src="_/uwo/SusceptibilityPlot.jpg">
+                        <br><br>
+                    </div>
+                </div>
+                <u class="BodyToggle2">ASTM Measurements</u>
+                <div style="line-height:normal">
+                    <div class="ToggleMessage2 fade">
+                        <p align="justify">
+                            Stainless steel rods were machined for two kinds of tests, magnetically induced deflection and rotation.
+                            I only worked on the rotation tests.
+                        </p>
+                        <div id="slideshow4" class="slideshow-container">
+                            <div class="mySlides fade"><img class="slideshow-img" src="_/uwo/rod_deflection.jpg"></div>
+                            <div class="mySlides fade"><img class="slideshow-img" src="_/uwo/rod_rotate1.jpg"></div>
+                            <div class="mySlides fade"><img class="slideshow-img" src="_/uwo/rod_rotate2.jpg"></div>
+                            <br>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, slideshow4)"></span>
+                                <span class="dot" onclick="currentSlide(2, slideshow4)"></span>
+                                <span class="dot" onclick="currentSlide(3, slideshow4)"></span>
+                            </div>
+                        </div>
+                        <p align="justify">
+                            The apparatus used was designed from the ground up but followed the specifications from the ASTM International.
+                            Specifically, it was designed according to ASTM F2213-17. The experimental measurements were taken on a 3 T GE scanner.
+                        </p>
+                        <div id="slideshow5" class="slideshow-container">
+                            <div class="mySlides fade"><img class="slideshow-img" src="_/uwo/Aparatus_holderthin.jpg"></div>
+                            <div class="mySlides fade"><img class="slideshow-img" src="_/uwo/Aparatus_holderthick.jpg"></div>
+                            <div class="mySlides fade"><img class="slideshow-img" src="_/uwo/Aparatus.jpg"></div>
+                            <div class="mySlides fade"><img class="slideshow-img" src="_/uwo/Apparatus_lineardisplacement.jpg"></div>
+                            <div class="mySlides fade"><img class="slideshow-img" src="_/uwo/Apparatus_scanner.jpg"></div>
+                            <br>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, slideshow5)"></span>
+                                <span class="dot" onclick="currentSlide(2, slideshow5)"></span>
+                                <span class="dot" onclick="currentSlide(3, slideshow5)"></span>
+                                <span class="dot" onclick="currentSlide(4, slideshow5)"></span>
+                                <span class="dot" onclick="currentSlide(5, slideshow5)"></span>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+                <u class="BodyToggle3">Apparatus Designs</u>
+                <div style="line-height:normal">
+                    <div class="ToggleMessage3 fade">
+                        <p align="justify">
+                             ASTM International is the governing agency for producing standard tests.
+                             There are two main methods for measuring magnetically induced torque on medical implants.
+                             Shown below are the apparatuses for said methods, one using a low-friction spindle and another using a torsional spring.
+                             A brief study I did involved comparing the instrumental uncertainties between methods.
+                         </p>
+                         <div id="slideshow7" class="slideshow-container">
+                             <div class="mySlides fade"><img class="slideshow-img" style="width:auto; height:auto" src="_/uwo/UnusedApparatus_Pulley.jpg"></div>
+                             <div class="mySlides fade"><img class="slideshow-img" style="width:auto; height:380" src="_/uwo/UnusedApparatus_Spring.jpg"></div>
+                             <br>
+                             <div style="text-align:center">
+                                 <span class="dot" onclick="currentSlide(1, slideshow7)"></span>
+                                 <span class="dot" onclick="currentSlide(2, slideshow7)"></span>
+                             </div>
+                         </div>
+                         <p align="justify">One may outperform the other.</p>
+                         <div id="slideshow8" class="slideshow-container">
+                             <div class="mySlides fade"><img class="slideshow-img" style="width:90%; height:auto" src="_/uwo/Data1.jpg"></div>
+                             <div class="mySlides fade"><img class="slideshow-img" style="width:90%; height:auto" src="_/uwo/Data2.jpg"></div>
+                             <br>
+                             <div style="text-align:center">
+                                 <span class="dot" onclick="currentSlide(1, slideshow8)"></span>
+                                 <span class="dot" onclick="currentSlide(2, slideshow8)"></span>
+                             </div>
+                         </div>
+                        <br><br>
+                    </div>
+                </div>
+                <u class="BodyToggle4">Tomfoolery</u>
+                <div style="line-height:normal">
+                    <div class="ToggleMessage4 fade">
+                        <p align="justify">
+                            Most people probably wouldn't use an FEM solver for making CAD models but COMSOL is just so darn intuitive to use.
+                            Design in COMSOL, export, and ask the shop guys to print.
+                        </p>
+                        <div id="slideshow9" class="slideshow-container">
+                            <div class="mySlides fade"><img class="slideshow-img" src="_/uwo/Thatsnomoon.jpg"></div>
+                            <div class="mySlides fade"><img class="slideshow-img" src="_/uwo/DeathStar_exported.jpg"></div>
+                            <div class="mySlides fade"><img class="slideshow-img" src="_/uwo/DeathStar_printed.jpg"></div>
+                            <br>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, slideshow9)"></span>
+                                <span class="dot" onclick="currentSlide(2, slideshow9)"></span>
+                                <span class="dot" onclick="currentSlide(3, slideshow9)"></span>
+                            </div>
+                        </div>
+                        <p align="justify">
+                            Luke: Look at him. He's headed for that small moon.
+                            <br>Ben Kenobi: That's no moon. It's a space station.
+                        </p>
+                        <img class="slideshow-img" src="_/uwo/DeathStar_moneyshot.jpg">
+                        <p align="justify">I also made a TIE fighter in COMSOL but the wings were too thin to practically 3D print.</p>
+                        <img class="slideshow-img" src="_/uwo/TIEFighter.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="FooterBox">
+                <a href="https://www.usask.ca/" style="text-decoration:none" target="_blank">
+                    <img class="affiliationzoom" src="_/Logo_usask.png" alt="University of Saskatchewan">
+                </a>
+                <a href="https://www.lightsource.ca/" style="text-decoration:none" target="_blank">
+                    <img class="affiliationzoom" src="_/Logo_cls.png" alt="The Canadian Light Source">
+                </a>
+            </div>
+        </div>
+        <script>
+            var slideshow1 = document.getElementById("slideshow1");
+            slideshow1.currentSlideIndex = 1;
+            showSlides(slideshow1.currentSlideIndex, slideshow1);
+            var slideshow2 = document.getElementById("slideshow2");
+            slideshow2.currentSlideIndex = 1;
+            showSlides(slideshow2.currentSlideIndex, slideshow2);
+            var slideshow4 = document.getElementById("slideshow4");
+            slideshow4.currentSlideIndex = 1;
+            showSlides(slideshow4.currentSlideIndex, slideshow4);
+            var slideshow5 = document.getElementById("slideshow5");
+            slideshow5.currentSlideIndex = 1;
+            showSlides(slideshow5.currentSlideIndex, slideshow5);
+            var slideshow7 = document.getElementById("slideshow7");
+            slideshow7.currentSlideIndex = 1;
+            showSlides(slideshow7.currentSlideIndex, slideshow7);
+            var slideshow8 = document.getElementById("slideshow8");
+            slideshow8.currentSlideIndex = 1;
+            showSlides(slideshow8.currentSlideIndex, slideshow8);
+            var slideshow9 = document.getElementById("slideshow9");
+            slideshow9.currentSlideIndex = 1;
+            showSlides(slideshow9.currentSlideIndex, slideshow9);
+            function plusSlides(n, slideshow) {showSlides(slideshow.currentSlideIndex += n, slideshow);}
+            function currentSlide(n, slideshow) {showSlides(slideshow.currentSlideIndex = n, slideshow);}
+            function showSlides(n, slideshow) {
+                var i;
+                var slides = slideshow.getElementsByClassName("mySlides");
+                var dots = slideshow.getElementsByClassName("dot");
+                if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+                if (n < 1) {slideshow.currentSlideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+                for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active", "");}
+                slides[slideshow.currentSlideIndex-1].style.display = "block";  
+                dots[slideshow.currentSlideIndex-1].className += " active";
+            }
+        </script>
+    </body>
+</html>
