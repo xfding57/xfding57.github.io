@@ -7,7 +7,30 @@
         <meta charset="utf-8">
         <!-- jQuery Show/Hide Effect -->
         <script src="jquery.min.js"></script>
-        <style type="text/css"></style>
+        <script>
+            $(document).ready(function(){
+                $(".BodyToggle1").click(function(){
+                    $(".ToggleMessage1").toggle();
+                });
+            });
+        </script>
+        <style type="text/css">
+            .BodyToggle1 {
+                text-decoration:none;
+                border-bottom:1px dotted white;
+                font-family:Helvetica;
+                font-size:20px;
+                cursor:pointer;
+            }
+            .BodyToggle1:hover {
+                color:rgba(222,222,222,0.5);
+                -webkit-transition-duration:0.4s;
+                transition-duration:0.4s;
+            }
+            .ToggleMessage1 {
+                display:none
+            }
+        </style>
     </head>
     <body>
         <!-- Header -->
@@ -149,11 +172,16 @@
                                 <u class="ReferenceLink">"Uncertainty Analysis of Torque Measurement Methods Described in ASTM F2213-17"</u></a>
                                 <i>International Society of Magnetic Resonance in Medicine, 27th Annual Meeting</i>, Montreal QC, Canada, 2019 May (Digital Poster)
                             </li>
-                            <li>
+                            <li class="BodyToggle1">
                                 <b>XF Ding</b>, WB Handler, BA Chronik, 
                                 <a href="https://www.imno.ca/sites/default/files/ImNO2019Proceedings.pdf#page=129" target="_blank">
                                 <u class="ReferenceLink">"Uncertainty Analysis of Torque Measurement Methods Described in ASTM F2213-17"</u></a>
                                 <i>Imaging Network Ontario, 17th Annual Symposium</i>, London ON, Canada, 2019 March (Poster)
+                                <div class="ToggleMessage1 fade">
+                                    <p align="justify">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
+                                    </p>
+                                </div>
                             </li>
                         </ol> 
                     </div>
