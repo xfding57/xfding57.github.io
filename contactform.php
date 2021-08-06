@@ -8,10 +8,10 @@ if (isset($_POST['submit'])) {
 	$subject = $_POST['subject'];
 	$message = $_POST['message'];
 
-	$mailto = "xiaofan.ding@usask.ca";
+	$mymail = "xiaofan.ding@usask.ca";
 	$header = "From: ".$youremail;
 	$text = .$firstname." ".$lastname." from ".$affiliation." messaged you:\n\n".$message;
 
-	mail($mailto, $subject, $text, $header);
+	mail($mymail, $subject, $text, $header);
 	header("Location: index.php?mailsend");
 }
