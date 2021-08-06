@@ -1,12 +1,12 @@
 <?php 
 
-if (isset($_Post['submit'])) {
-	$firstname = $_Post['firstname'];
-	$lastname = $_Post['lastname'];
-	$affiliation = $_Post['affiliation'];
-	$youremail = $_Post['youremail'];
-	$subject = $_Post['subject'];
-	$message = $_Post['message'];
+if (isset($_POST['submit'])) {
+	$firstname = $_POST['firstname'];
+	$lastname = $_POST['lastname'];
+	$affiliation = $_POST['affiliation'];
+	$youremail = $_POST['youremail'];
+	$subject = $_POST['subject'];
+	$message = $_POST['message'];
 
 	$mailto = "xiaofan.ding@usask.ca";
 	$header = "From: ".$youremail;
