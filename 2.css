@@ -279,7 +279,7 @@ a:link, a:visited, a:hover, a:active {
 
 /* ================================= CONTACT FORM ================================= */
 
-.input_box, .message_box {
+.input_box {
   font-family:'Helvetica';
   font-size:15px;
 }
