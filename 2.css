@@ -296,6 +296,7 @@ a:link, a:visited, a:hover, a:active {
   border-bottom:1px dotted white;
   font-family:Helvetica;
   font-size:20px;
+  cursor:pointer;
 }
 
 .submit_button:hover {
