@@ -13,5 +13,5 @@ if (isset($_POST['submit'])) {
 	$text = .$firstname." ".$lastname." from ".$affiliation." messaged you:\n\n".$message;
 
 	mail($mymail, $subject, $text, $header);
-	header("Location: index.php?mailsend");
+	header("Location: 2_5.html?mailsend");
 }
