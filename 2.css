@@ -282,6 +282,7 @@ a:link, a:visited, a:hover, a:active {
 .input_box {
   font-family:'Helvetica';
   font-size:15px;
+  width:400px;
 }
 
 .submit_button {
