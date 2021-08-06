@@ -287,7 +287,6 @@ a:link, a:visited, a:hover, a:active {
 
 .submit_button {
   background-color: rgba(255,255,255,0);
-  color: black;
   text-align: center;
   text-decoration:none;
   border-bottom:1px dotted white;
