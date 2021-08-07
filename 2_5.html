@@ -114,7 +114,36 @@
             </form>
             <!-- Modal Button --> 
             <p><button class="submit_button" id="myBtn">Send</button></p>
-
+            <!-- Modal Window --> 
+            <div class="modal" id="myModal">
+                <div class="modal_content">
+                    <div class="modal_header">
+                        <span class="modal_close"><b>&times;</b></span>
+                        <h3><b>Error Message</b></h3>
+                    </div>
+                    <div class="modal_body">
+                        <p>Can't seem to get email to work.</p>
+                    </div>
+                    <div class="modal_footer">
+                    </div>
+                </div>          
+            </div>
+            <script>
+                // Modal Window
+                modal = document.getElementById('myModal');
+                var btn = document.getElementById("myBtn");
+                var span = document.getElementsByClassName("modal_close")[0];
+                btn.onclick = function() {
+                    modal.style.display = "block";
+                }
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {modal.style.display = "none";}
+                }
+            </script>
             <!-- Footer -->
             <div class="FooterBox">
                 <a href="https://www.usask.ca/" style="text-decoration:none" target="_blank">
@@ -125,37 +154,6 @@
                 </a>
             </div>
         </div>
+
     </body>
-
-    <!-- Modal Window --> 
-    <div class="modal" id="myModal">
-        <div class="modal_content">
-            <div class="modal_header">
-                <span class="modal_close"><b>&times;</b></span>
-                <h3><b>Error Message</b></h3>
-            </div>
-            <div class="modal_body">
-                <p>Can't seem to get email to work.</p>
-            </div>
-            <div class="modal_footer">
-            </div>
-        </div>          
-    </div>
-    <script>
-        // Modal Window
-        modal = document.getElementById('myModal');
-        var btn = document.getElementById("myBtn");
-        var span = document.getElementsByClassName("modal_close")[0];
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {modal.style.display = "none";}
-        }
-    </script>
-
 </html>
