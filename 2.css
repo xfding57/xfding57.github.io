@@ -290,10 +290,7 @@ a:link, a:visited, a:hover, a:active {
   color:rgb(222,222,222);
   text-align:center;
   text-decoration:none;
-  border-top:none;
-  border-left:none;
-  border-right:none;
-  border-bottom:1px dotted white;
+  border:1px solid white;
   font-family:Helvetica;
   font-size:20px;
   cursor:pointer;
