@@ -20,12 +20,12 @@
             }
             .modal_content {
                 margin:auto;
-                width:75%;
+                width:500px;
                 height:auto;
-                -webkit-animation-name:animatetop; /* Safari */
-                -webkit-animation-duration:0.8s; /* Safari */
-                animation-name:animatetop;
+                animation-name:modalfade;
                 animation-duration:0.8s
+                -webkit-animation-name:modalfade; /* Safari */
+                -webkit-animation-duration:0.8s; /* Safari */
             }
             .modal_header,
             .modal_footer {
@@ -50,8 +50,8 @@
                 text-decoration:none;
                 cursor:pointer;
             }
-            @-webkit-keyframes animatetop {from {top:-300px; opacity:0} to {top:0; opacity:1}}
-            @keyframes animatetop {from {top:-300px; opacity:0} to {top:0; opacity:1}}
+            @-webkit-keyframes modalfade {from {top:-300px; opacity:0} to {top:0; opacity:1}}
+            @keyframes modalfade {from {top:-300px; opacity:0} to {top:0; opacity:1}}
         </style>
     </head>
     <body>
