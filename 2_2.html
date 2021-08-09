@@ -44,7 +44,9 @@
             .ToggleMessage3 {
                 display:none
             }
-
+            .pdfobject-container {
+                height:500px;
+            }
         </style>
     </head>
     <body>
@@ -177,11 +179,9 @@
                                 <i>International Society of Magnetic Resonance in Medicine, 28th Annual Meeting</i>, Virtual Conference, 2020 August
                                 <u class="BodyToggle1 fade">(Digital Poster)</u>
                             </li>
-                            <div class="ToggleMessage1 fade">
-                                <p align="justify">
-                                    <embed src="media/BG2/2020_ISMRM_4186.pdf" type="application/pdf" style="width:100%;height:500%;z-index:2;"></embed>
-                                </p>
-                            </div>
+                            <div class="ToggleMessage1 fade" id="Toggle1"></div>
+                            <script src="pdfobject.js"></script>
+                            <script>PDFObject.embed("media/BG2/2020_ISMRM_4186.pdf", "#Toggle1");</script>
                             <li>
                                 <b>XF Ding</b>, WB Handler, D Gignac, BA Chronik, 
                                 <a href="https://index.mirasmart.com/ISMRM2020/PDFfiles/4214.html" target="_blank">
@@ -189,11 +189,9 @@
                                 <i>International Society of Magnetic Resonance in Medicine, 28th Annual Meeting</i>, Virtual Conference, 2020 August
                                 <u class="BodyToggle2 fade">(Digital Poster)</u>
                             </li>
-                            <div class="ToggleMessage2 fade">
-                                <p align="justify">
-                                    <embed src="media/BG2/2020_ISMRM_4214.pdf" type="application/pdf" width="100%" height="100%"></embed>
-                                </p>
-                            </div>
+                            <div class="ToggleMessage2 fade" id="Toggle2"></div>
+                            <script src="pdfobject.js"></script>
+                            <script>PDFObject.embed("media/media/BG2/2020_ISMRM_4214.pdf", "#Toggle2");</script>
                             <li>
                                 <b>XF Ding</b>, WB Handler, BA Chronik, 
                                 <a href="https://www.imno.ca/sites/default/files/ImNO2020Proceedings.pdf#page=199" target="_blank">
