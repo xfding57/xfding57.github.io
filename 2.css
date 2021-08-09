@@ -302,6 +302,57 @@ a:link, a:visited, a:hover, a:active {
   transition-duration:0.4s;
 }
 
+/* ================================= MODAL WINDOW ================================= */
+
+.modal {
+  background-color:rgba(0,0,0,0.75);
+  display:none;
+  position:fixed;
+  padding-top:100px;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  z-index:1;
+}
+.modal_content {
+  width:500px;
+  height:auto;
+  margin:auto;
+  animation-name:modalfade;
+  animation-duration:0.8s
+  -webkit-animation-name:modalfade; /* Safari */
+  -webkit-animation-duration:0.8s; /* Safari */
+}
+.modal_header,
+.modal_footer {
+  background-color:rgb(13,13,13);
+  padding:2px 15px;
+}
+.modal_body {
+  background-color:rgb(25,25,25);
+  overflow-y:auto;
+  padding:2px 15px;
+}
+.modal_close {
+  float:right;
+  padding:2px 15px;
+  font-size:40px;
+  transition-duration:0.4s;
+  -webkit-transition-duration:0.4s;
+}
+.modal_close:hover {
+  color:rgba(222,222,222,0.5);
+  text-decoration:none;
+  cursor:pointer;
+}
+@keyframes modalfade {
+  from {top:-300px; opacity:0} to {top:0; opacity:1}
+}
+@-webkit-keyframes modalfade {
+  from {top:-300px; opacity:0} to {top:0; opacity:1}
+}
+
 /* ================================= SCROLLBAR ================================= */
 
 ::-webkit-scrollbar {width:15px}
