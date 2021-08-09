@@ -16,24 +16,38 @@
   font-family:Helvetica
 }
 
-.FigureCaption {
-  text-decoration:none;
-  line-height:2;
-  font-family:Helvetica;
-  font-size:13px;
-  font-weight:lighter;
-}
-
 /* ================================= HEADER ================================= */
 
-.BlurBGhome {background-image:url('media/Header_FFS_because_spring_desktop.jpg')}
-.BlurBGabout {background-image:url('media/Header_FFS_quiet_spring_desktop.jpg')}
-.BlurBGwork {background-image:url('media/Header_FFS_bloom_two_desktop.jpg')}
-.BlurBGresearch {background-image:url('media/Header_FFS_let_it_in_desktop.jpg')}
-.BlurBGmedia {background-image:url('media/Header_FFS_everorange_desktop.jpg')}
-.BlurBGcontact {background-image:url('media/Header_FFS_snow_cones_desktop.jpg')}
+.BlurBGhome {
+  background-image:url('media/Header_FFS_because_spring_desktop.jpg')
+}
 
-.BlurBGhome, .BlurBGabout, .BlurBGwork, .BlurBGresearch, .BlurBGmedia, .BlurBGcontact{
+.BlurBGabout {
+  background-image:url('media/Header_FFS_quiet_spring_desktop.jpg')
+}
+
+.BlurBGwork {
+  background-image:url('media/Header_FFS_bloom_two_desktop.jpg')
+}
+
+.BlurBGresearch {
+  background-image:url('media/Header_FFS_let_it_in_desktop.jpg')
+}
+
+.BlurBGmedia {
+  background-image:url('media/Header_FFS_everorange_desktop.jpg')
+}
+
+.BlurBGcontact {
+  background-image:url('media/Header_FFS_snow_cones_desktop.jpg')
+}
+
+.BlurBGhome, 
+.BlurBGabout, 
+.BlurBGwork, 
+.BlurBGresearch, 
+.BlurBGmedia, 
+.BlurBGcontact{
   /* Add the blur effect */
   filter:blur(0px);
   -webkit-filter:blur(0px);
@@ -154,7 +168,10 @@
 
 /* ================================= LINKS ================================= */
 
-a:link, a:visited, a:hover, a:active {
+a:link, 
+a:visited, 
+a:hover, 
+a:active {
   color:rgb(222,222,222);
   background-color:transparent;
   text-decoration:none;
@@ -187,13 +204,27 @@ a:link, a:visited, a:hover, a:active {
   transition-duration:0.4s;
 }
 
-@-webkit-keyframes animatetop {from {top:-300px; opacity:0} to {top:0; opacity:1}}
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} to {top:0; opacity:1}
+}
 
-@keyframes animatetop {from {top:-300px; opacity:0} to {top:0; opacity:1}}
+@keyframes animatetop {
+  from {top:-300px; opacity:0} to {top:0; opacity:1}
+}
+
+.FigureCaption {
+  text-decoration:none;
+  line-height:2;
+  font-family:Helvetica;
+  font-size:13px;
+  font-weight:lighter;
+}
 
 /* ================================= SLIDESHOW ================================= */
 
-.mySlides {display:none;}
+.mySlides {
+  display:none;
+}
 
 .slideshow-img {
   display:block;
@@ -218,7 +249,10 @@ a:link, a:visited, a:hover, a:active {
   transition:background-color 0.6s ease;
 }
 
-.active, .dot:hover {background-color:#717171}
+.active,
+.dot:hover {
+  background-color:#717171
+}
 
 .fade {
   -webkit-animation-name:fade;
@@ -227,9 +261,13 @@ a:link, a:visited, a:hover, a:active {
   animation-duration:1.5s;
 }
 
-@-webkit-keyframes fade {from {opacity:0.4} to {opacity:1}}
+@-webkit-keyframes fade {
+  from {opacity:0.4} to {opacity:1}
+}
 
-@keyframes fade {from {opacity:0.4} to {opacity:1}}
+@keyframes fade {
+  from {opacity:0.4} to {opacity:1}
+}
 
 .textoverslidesdiv {
   float:left;
@@ -315,6 +353,7 @@ a:link, a:visited, a:hover, a:active {
   height:100%;
   z-index:1;
 }
+
 .modal_content {
   width:500px;
   height:auto;
@@ -324,16 +363,27 @@ a:link, a:visited, a:hover, a:active {
   -webkit-animation-name:modalfade; /* Safari */
   -webkit-animation-duration:0.8s; /* Safari */
 }
+
+@-webkit-keyframes modalfade {
+  from {top:-300px; opacity:0} to {top:0; opacity:1}
+}
+
+@keyframes modalfade {
+  from {top:-300px; opacity:0} to {top:0; opacity:1}
+}
+
 .modal_header,
 .modal_footer {
   background-color:rgb(13,13,13);
   padding:2px 15px;
 }
+
 .modal_body {
   background-color:rgb(25,25,25);
   overflow-y:auto;
   padding:2px 15px;
 }
+
 .modal_close {
   float:right;
   padding:2px 15px;
@@ -341,24 +391,30 @@ a:link, a:visited, a:hover, a:active {
   transition-duration:0.4s;
   -webkit-transition-duration:0.4s;
 }
+
 .modal_close:hover {
   color:rgba(222,222,222,0.5);
   text-decoration:none;
   cursor:pointer;
 }
-@keyframes modalfade {
-  from {top:-300px; opacity:0} to {top:0; opacity:1}
-}
-@-webkit-keyframes modalfade {
-  from {top:-300px; opacity:0} to {top:0; opacity:1}
-}
 
 /* ================================= SCROLLBAR ================================= */
 
-::-webkit-scrollbar {width:15px}
-::-webkit-scrollbar-track {background:rgb(0,0,0)}
-::-webkit-scrollbar-thumb {background:rgb(50,50,50)}
-::-webkit-scrollbar-thumb:hover {background:rgb(100,100,100)}
+::-webkit-scrollbar {
+  width:15px
+}
+
+::-webkit-scrollbar-track {
+  background:rgb(0,0,0)
+}
+
+::-webkit-scrollbar-thumb {
+  background:rgb(50,50,50)
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:rgb(100,100,100)
+}
 
 /* ================================= DROPDOWN MENU ================================= */
 
@@ -383,6 +439,10 @@ a:link, a:visited, a:hover, a:active {
   display:block;
 }
 
-.dropdown:hover .dropdown-content {display:block}
+.dropdown:hover .dropdown-content {
+  display:block
+}
 
-.dropdown-content a:hover {color:rgba(222,222,222,0.5)}
+.dropdown-content a:hover {
+  color:rgba(222,222,222,0.5)
+}
