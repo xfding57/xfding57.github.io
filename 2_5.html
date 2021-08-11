@@ -33,9 +33,10 @@
             <p>
                 Feel free to fill out the form below and send me a message regarding my work.
             </p>
-
-<!-- php contact form, this doesn't work with github pages
+            <!-- php contact form, this doesn't work with github pages
             <form action="scripts/contactform.php" method="post">
+            --> 
+            <form action="https://formspree.io/f/mknkpwbe" method="POST">
                 <p>
                     Your Name
                     <br>
@@ -64,35 +65,9 @@
                 </p>
                 <p><button class="submit_button" type="submit" name="submit">Send</button></p>
             </form>
---> 
-
-            <!-- modify this form HTML and place wherever you want your form -->
-            <form action="https://formspree.io/f/mknkpwbe" method="POST">
-                <label> Your Name
-                    <input class="input_box" style="width:200px;" type="text" name="firstname" placeholder="First Name">
-                    <input class="input_box" style="width:200px;" type="text" name="lastname" placeholder="Last Name">
-                </label>
-                <label> Affiliation
-                    <input class="input_box" type="text" name="affiliation" placeholder="Affiliation">
-                </label>
-
-                <label> Return Address
-                    <input class="input_box"  type="email" name="_replyto" placeholder="Your Email">
-                </label>
-
-                <label> Subject
-                    <input class="input_box" type="text" name="subject" placeholder="Subject">
-                </label>
-
-                <label> Message
-                    <textarea style="font-family:'Helvetica';font-size:15px;" rows="10" cols="50" type="text" name="message" placeholder="Message"></textarea>
-                </label>
-                <button type="submit">Send</button>
-            </form>
-
-<!-- Error Button
+            <!-- Error Button
             <p><button class="submit_button" id="myBtn">Send</button></p>
--->
+            -->
             <!-- Modal Window --> 
             <div class="modal" id="myModal">
                 <div class="modal_content">
