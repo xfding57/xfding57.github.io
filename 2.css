@@ -364,6 +364,7 @@ a:active {
   animation-duration:0.8s
   -webkit-animation-name:modalfade; /* Safari */
   -webkit-animation-duration:0.8s; /* Safari */
+  box-shadow: 0 10px 10px 0 rgba(255,255,255,0.2),0 10px 10px 0 rgba(255,255,255,0.2);
 }
 
 @-webkit-keyframes modalfade {
