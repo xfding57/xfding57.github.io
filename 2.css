@@ -35,6 +35,7 @@ body {
 .BlurBGcontact {
   background-image:url('media/Header_FFS_snow_cones_desktop.jpg')
 }
+.BlurBG,
 .BlurBGhome, 
 .BlurBGabout, 
 .BlurBGwork, 
@@ -148,6 +149,7 @@ a:active {
   background-color:transparent;
   text-decoration:none;
 }
+
 .MainLinks:hover {
   text-decoration:underline;
   color:rgba(0,0,0,1);
@@ -182,14 +184,6 @@ a:active {
 }
  */
 
-.FigureCaption {
-  text-decoration:none;
-  line-height:2;
-  font-family:Helvetica;
-  font-size:13px;
-  font-weight:lighter;
-}
-
 .AffiliationLinks {
   padding-left:25px;
   padding-right:25px;
@@ -205,6 +199,14 @@ a:active {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
+}
+
+.FigureCaption {
+  text-decoration:none;
+  line-height:2;
+  font-family:Helvetica;
+  font-size:13px;
+  font-weight:lighter;
 }
 
 /* ================================= SLIDESHOW ================================= */
