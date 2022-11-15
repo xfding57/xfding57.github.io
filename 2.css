@@ -227,19 +227,16 @@ a:active {
 .mySlides {
   display:none;
 }
-
 .slideshow-img {
   display:block;
   height:500px;
   margin:auto;
 }
-
 .slideshow-container {
   position:relative;
   height:auto;
   margin:auto;
 }
-
 .dot {
   cursor:pointer;
   height:13px;
@@ -250,7 +247,6 @@ a:active {
   display:inline-block;
   transition:background-color 0.6s ease;
 }
-
 .active,
 .dot:hover {
   background-color:#717171
@@ -286,7 +282,7 @@ a:active {
     10%,70% {opacity:1}
 }
 
-
+/* Over picture text caption */
 .textoverslidesdiv {
   float:left;
   position:absolute;
@@ -295,38 +291,35 @@ a:active {
   width:100%;
   padding-left:25px;
   background-color:rgba(0,0,0,0.0);
-  color:rgba(255,255,255,1)
+  color:rgba(255,255,255,1);
+  opacity:0
 }
-
+.textoverslidesdiv:hover {
+  opacity:1
+}
 .textoverslidestext {color:white}
-
 .usaskspan1 {
   background-color:rgb(255,203,0);
   padding-left:15px
 }
-
 .usaskspan2 {
   background-color:rgb(0,105,62);
   padding-left:15px;
   padding-right:15px
 }
-
 .uwospan1 {
   background-color:rgb(255,255,255);
   padding-left:15px
 }
-
 .uwospan2 {
   background-color:rgb(79,38,131);
   padding-left:15px;
   padding-right:15px
 }
-
 .ryersonspan1 {
   background-color:rgb(255,220,0);
   padding-left:15px
 }
-
 .ryersonspan2 {
   background-color:rgb(0,76,155);
   padding-left:15px;
