@@ -11,7 +11,6 @@ body {
 .HeadingLevel1 {
   font-family:Helvetica
 }
-
 .HeadingLevel2 {
   font-family:Helvetica
 }
@@ -21,27 +20,21 @@ body {
 .BlurBGhome {
   background-image:url('media/Header_FFS_because_spring_desktop.jpg')
 }
-
 .BlurBGabout {
   background-image:url('media/Header_FFS_quiet_spring_desktop.jpg')
 }
-
 .BlurBGwork {
   background-image:url('media/Header_FFS_bloom_two_desktop.jpg')
 }
-
 .BlurBGresearch {
   background-image:url('media/Header_FFS_let_it_in_desktop.jpg')
 }
-
 .BlurBGmedia {
   background-image:url('media/Header_FFS_everorange_desktop.jpg')
 }
-
 .BlurBGcontact {
   background-image:url('media/Header_FFS_snow_cones_desktop.jpg')
 }
-
 .BlurBGhome, 
 .BlurBGabout, 
 .BlurBGwork, 
@@ -61,7 +54,6 @@ body {
   background-repeat:no-repeat;
   background-size:cover;
 }
-
 .TextBox {
   font-size:25px;
   position:absolute;
@@ -75,7 +67,6 @@ body {
   text-align:center;
   z-index:2;
 }
-
 .LinkBox {
   font-size:25px;
   position:absolute;
@@ -95,7 +86,6 @@ body {
   left:50%;
   */
 }
-
 .FigureCaptionBox {
   position:absolute;
   top:1%;
@@ -120,7 +110,6 @@ body {
   z-index:2;
   background-color:rgba(255,255,255,0);
 }
-
 .ContentsBox {
   border:1px outset white;
   background-color:rgba(255,255,255,0.1);
@@ -130,7 +119,6 @@ body {
   padding-right:30px;
   */
 }
-
 .ContentsLinks:hover {
   color:rgba(222,222,222,0.5);
   -webkit-transition-duration:0.4s;
@@ -150,24 +138,6 @@ body {
   background-color:rgba(255,255,255,0);
 }
 
-.affiliationzoom {
-  padding-left:25px;
-  padding-right:25px;
-  background-color:rgba(255,255,255,0);
-  transition:transform 0.3s;
-  margin:10px 20px;
-  height:50px;
-  width:auto;
-  border:0;
-  cursor:pointer;
-}
-
-.affiliationzoom:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
-}
-
 /* ================================= LINKS ================================= */
 
 a:link, 
@@ -178,7 +148,6 @@ a:active {
   background-color:transparent;
   text-decoration:none;
 }
-
 .MainLinks:hover {
   text-decoration:underline;
   color:rgba(0,0,0,1);
@@ -193,12 +162,10 @@ a:active {
   font-family:Helvetica;
   font-size:20px;
 }
-
 .ReferenceLink {
   text-decoration:none;
   border-bottom:1px dotted white
 }
-
 .BodyLinks:hover,
 .ReferenceLink:hover {
   color:rgba(222,222,222,0.5);
@@ -206,13 +173,14 @@ a:active {
   transition-duration:0.4s;
 }
 
+/* 
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0} to {top:0; opacity:1}
 }
-
 @keyframes animatetop {
   from {top:-300px; opacity:0} to {top:0; opacity:1}
 }
+ */
 
 .FigureCaption {
   text-decoration:none;
@@ -222,6 +190,22 @@ a:active {
   font-weight:lighter;
 }
 
+.AffiliationLinks {
+  padding-left:25px;
+  padding-right:25px;
+  background-color:rgba(255,255,255,0);
+  transition:transform 0.3s;
+  margin:10px 20px;
+  height:50px;
+  width:auto;
+  border:0;
+  cursor:pointer;
+}
+.AffiliationLinks:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
 /* ================================= SLIDESHOW ================================= */
 
 .mySlides {
@@ -329,7 +313,6 @@ a:active {
   font-size:15px;
   width:400px;
 }
-
 .submit_button {
   background-color:rgba(255,255,255,0);
   color:rgb(222,222,222);
@@ -340,7 +323,6 @@ a:active {
   font-size:20px;
   cursor:pointer;
 }
-
 .submit_button:hover {
   color:rgba(222,222,222,0.5);
   -webkit-transition-duration:0.4s;
@@ -360,7 +342,6 @@ a:active {
   height:100%;
   z-index:1;
 }
-
 .modal_content {
   width:500px;
   height:auto;
@@ -371,27 +352,22 @@ a:active {
   -webkit-animation-duration:0.8s; /* Safari */
   box-shadow: 0 10px 10px 0 rgba(255,255,255,0.2),0 10px 10px 0 rgba(255,255,255,0.2);
 }
-
 @-webkit-keyframes modalfade {
   from {top:-300px; opacity:0} to {top:0; opacity:1}
 }
-
 @keyframes modalfade {
   from {top:-300px; opacity:0} to {top:0; opacity:1}
 }
-
 .modal_header,
 .modal_footer {
   background-color:rgb(13,13,13);
   padding:2px 15px;
 }
-
 .modal_body {
   background-color:rgb(25,25,25);
   overflow-y:auto;
   padding:2px 15px;
 }
-
 .modal_close {
   float:right;
   padding:2px 15px;
@@ -399,7 +375,6 @@ a:active {
   transition-duration:0.4s;
   -webkit-transition-duration:0.4s;
 }
-
 .modal_close:hover {
   color:rgba(222,222,222,0.5);
   text-decoration:none;
@@ -411,15 +386,12 @@ a:active {
 ::-webkit-scrollbar {
   width:15px
 }
-
 ::-webkit-scrollbar-track {
   background:rgb(0,0,0)
 }
-
 ::-webkit-scrollbar-thumb {
   background:rgb(50,50,50)
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background:rgb(100,100,100)
 }
@@ -430,14 +402,12 @@ a:active {
   position:relative;
   display:inline-block;
 }
-
 .dropdown-content {
   position:absolute;
   display:none;
   background-color: rgba(0,0,0,1);
   z-index:3;
 }
-
 .dropdown-content a {
   font-size:17px;
   color: rgba(222,222,222,1);
@@ -446,11 +416,9 @@ a:active {
   text-decoration:none;
   display:block;
 }
-
 .dropdown:hover .dropdown-content {
   display:block
 }
-
 .dropdown-content a:hover {
   color:rgba(222,222,222,0.5)
 }
