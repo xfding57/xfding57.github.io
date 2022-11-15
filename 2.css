@@ -17,31 +17,7 @@ body {
 
 /* ================================= HEADER ================================= */
 
-.BlurBGhome {
-  background-image:url('media/Header_FFS_because_spring_desktop.jpg')
-}
-.BlurBGabout {
-  background-image:url('media/Header_FFS_quiet_spring_desktop.jpg')
-}
-.BlurBGwork {
-  background-image:url('media/Header_FFS_bloom_two_desktop.jpg')
-}
-.BlurBGresearch {
-  background-image:url('media/Header_FFS_let_it_in_desktop.jpg')
-}
-.BlurBGmedia {
-  background-image:url('media/Header_FFS_everorange_desktop.jpg')
-}
-.BlurBGcontact {
-  background-image:url('media/Header_FFS_snow_cones_desktop.jpg')
-}
-.BlurBG,
-.BlurBGhome, 
-.BlurBGabout, 
-.BlurBGwork, 
-.BlurBGresearch, 
-.BlurBGmedia, 
-.BlurBGcontact{
+.BlurBG {
   /* Add the blur effect */
   filter:blur(0px);
   -webkit-filter:blur(0px);
