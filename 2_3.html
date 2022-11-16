@@ -24,11 +24,6 @@
                 });
             });
             $(document).ready(function(){
-                $(".BodyToggle4").click(function(){
-                    $(".ToggleMessage4").toggle();
-                });
-            });
-            $(document).ready(function(){
                 $(".BodyToggle5").click(function(){
                     $(".ToggleMessage5").toggle();
                 });
@@ -41,7 +36,6 @@
             .BodyToggle1,
             .BodyToggle2,
             .BodyToggle3,
-            .BodyToggle4,
             .BodyToggle5 {
                 text-decoration:none;
                 border-bottom:1px dotted white;
@@ -52,7 +46,6 @@
             .BodyToggle1:hover,
             .BodyToggle2:hover,
             .BodyToggle3:hover,
-            .BodyToggle4:hover,
             .BodyToggle5:hover {
                 color:rgba(222,222,222,0.5);
                 -webkit-transition-duration:0.4s;
@@ -61,7 +54,6 @@
             .ToggleMessage1,
             .ToggleMessage2,
             .ToggleMessage3,
-            .ToggleMessage4,
             .ToggleMessage5 {
                 display:none
             }
@@ -243,34 +235,6 @@
                         <br><br>
                     </div>
                 </div>
-                <u class="BodyToggle4">Tomfoolery</u>
-                <div style="line-height:normal">
-                    <div class="ToggleMessage4 fade">
-                        <p align="justify">
-                            Most people probably wouldn't use an FEM solver for making CAD models but COMSOL is just so darn intuitive to use.
-                            Design in COMSOL, export, and ask the shop guys to print.
-                        </p>
-                        <div id="slideshow9" class="slideshow-container">
-                            <div class="mySlides fade"><img class="slideshow-img" src="media/BG3_uwo/Thatsnomoon.jpg"></div>
-                            <div class="mySlides fade"><img class="slideshow-img" src="media/BG3_uwo/DeathStar_exported.jpg"></div>
-                            <div class="mySlides fade"><img class="slideshow-img" src="media/BG3_uwo/DeathStar_printed.jpg"></div>
-                            <br>
-                            <div style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1, slideshow9)"></span>
-                                <span class="dot" onclick="currentSlide(2, slideshow9)"></span>
-                                <span class="dot" onclick="currentSlide(3, slideshow9)"></span>
-                            </div>
-                        </div>
-                        <p align="justify">
-                            Luke: Look at him. He's headed for that small moon.
-                            <br>Ben Kenobi: That's no moon. It's a space station.
-                        </p>
-                        <img class="slideshow-img" src="media/BG3_uwo/DeathStar_moneyshot.jpg">
-                        <p align="justify">I also made a TIE fighter in COMSOL but the wings were too thin to practically 3D print.</p>
-                        <img class="slideshow-img" src="media/BG3_uwo/TIEFighter.jpg">
-                    </div>
-                </div>
-            </div>
             <!-- Footer -->
             <div class="FooterBox">
                 <a href="https://www.usask.ca/" style="text-decoration:none" target="_blank">
@@ -300,9 +264,6 @@
             var slideshow8 = document.getElementById("slideshow8");
             slideshow8.currentSlideIndex = 1;
             showSlides(slideshow8.currentSlideIndex, slideshow8);
-            var slideshow9 = document.getElementById("slideshow9");
-            slideshow9.currentSlideIndex = 1;
-            showSlides(slideshow9.currentSlideIndex, slideshow9);
             function plusSlides(n, slideshow) {showSlides(slideshow.currentSlideIndex += n, slideshow);}
             function currentSlide(n, slideshow) {showSlides(slideshow.currentSlideIndex = n, slideshow);}
             function showSlides(n, slideshow) {
