@@ -194,15 +194,15 @@
                     Most people probably wouldn't use an FEM solver for making CAD models but COMSOL is just so darn intuitive to use.
                     Design in COMSOL, export, and ask the shop guys to print.
                 </p>
-                <div id="slideshow9" class="slideshow-container">
+                <div id="slideshow12" class="slideshow-container">
                     <div class="mySlides fade"><img class="slideshow-img" src="media/BG3_uwo/Thatsnomoon.jpg"></div>
                     <div class="mySlides fade"><img class="slideshow-img" src="media/BG3_uwo/DeathStar_exported.jpg"></div>
                     <div class="mySlides fade"><img class="slideshow-img" src="media/BG3_uwo/DeathStar_printed.jpg"></div>
                     <br>
                     <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1, slideshow9)"></span>
-                        <span class="dot" onclick="currentSlide(2, slideshow9)"></span>
-                        <span class="dot" onclick="currentSlide(3, slideshow9)"></span>
+                        <span class="dot" onclick="currentSlide(1, slideshow12)"></span>
+                        <span class="dot" onclick="currentSlide(2, slideshow12)"></span>
+                        <span class="dot" onclick="currentSlide(3, slideshow12)"></span>
                     </div>
                 </div>
                 <p align="justify">
@@ -411,6 +411,9 @@
             var slideshow11 = document.getElementById("slideshow11");
             slideshow11.currentSlideIndex = 1;
             showSlides(slideshow11.currentSlideIndex, slideshow11);
+            var slideshow11 = document.getElementById("slideshow12");
+            slideshow12.currentSlideIndex = 1;
+            showSlides(slideshow11.currentSlideIndex, slideshow12);
             function plusSlides(n, slideshow) {showSlides(slideshow.currentSlideIndex += n, slideshow);}
             function currentSlide(n, slideshow) {showSlides(slideshow.currentSlideIndex = n, slideshow);}
             function showSlides(n, slideshow) {
