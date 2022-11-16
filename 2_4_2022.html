@@ -40,6 +40,9 @@
                     <br>
                     <i class="FigureCaption">2022/10/21 - 2022/10/26</i>
                 </p>
+                <img class="slideshow-img" src="media/BG4_2022/221025.jpg">
+                <img class="slideshow-img" src="media/BG4_2022/221026_1.jpg">
+                <img class="slideshow-img" src="media/BG4_2022/221026_2.jpg">
                 <div style="border-bottom:3px dotted rgba(222,222,222,0.5)"><br></div>
             </a>
             <a id="220717">
@@ -48,6 +51,7 @@
                     <br>
                     <i class="FigureCaption">2022/07/17</i>
                 </p>
+                <img class="slideshow-img" src="media/BG4_2022/220717.jpg">
                 <div style="border-bottom:3px dotted rgba(222,222,222,0.5)"><br></div>
             </a>
             <a id="220605">
@@ -56,6 +60,21 @@
                     <br>
                     <i class="FigureCaption">2022/06/05 - 2022/09/05</i>
                 </p>
+                <div id="slideshow1" class="slideshow-container">
+                    <div class="mySlides fade"><img class="slideshow-img" src="media/BG4_2022/220605.jpg"></div>
+                    <div class="mySlides fade"><img class="slideshow-img" src="media/BG4_2022/220813.jpg"></div>
+                    <div class="mySlides fade"><img class="slideshow-img" src="media/BG4_2022/220820_2.jpg"></div>
+                    <div class="mySlides fade"><img class="slideshow-img" src="media/BG4_2022/220905_1.jpg"></div>
+                    <div class="mySlides fade"><img class="slideshow-img" src="media/BG4_2022/220905_2.jpg"></div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
+                        <span class="dot" onclick="currentSlide(2, slideshow1)"></span>
+                        <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
+                        <span class="dot" onclick="currentSlide(4, slideshow1)"></span>
+                        <span class="dot" onclick="currentSlide(5, slideshow1)"></span>
+                    </div>
+                </div>
                 <div style="border-bottom:3px dotted rgba(222,222,222,0.5)"><br></div>
             </a>
             <a id="220527">
@@ -64,6 +83,7 @@
                     <br>
                     <i class="FigureCaption">2022/05/27</i>
                 </p>
+                <img class="slideshow-img" src="media/BG4_2022/220527.jpg">
             </a>
             <!-- Footer -->
             <div class="FooterBox">
@@ -75,5 +95,23 @@
                 </a>
             </div>
         </div>
+        <script>
+            var slideshow1 = document.getElementById("slideshow1");
+            slideshow1.currentSlideIndex = 1;
+            showSlides(slideshow1.currentSlideIndex, slideshow1);
+            function plusSlides(n, slideshow) {showSlides(slideshow.currentSlideIndex += n, slideshow);}
+            function currentSlide(n, slideshow) {showSlides(slideshow.currentSlideIndex = n, slideshow);}
+            function showSlides(n, slideshow) {
+                var i;
+                var slides = slideshow.getElementsByClassName("mySlides");
+                var dots = slideshow.getElementsByClassName("dot");
+                if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+                if (n < 1) {slideshow.currentSlideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+                for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active", "");}
+                slides[slideshow.currentSlideIndex-1].style.display = "block";  
+                dots[slideshow.currentSlideIndex-1].className += " active";
+            }
+        </script>
     </body>
 </html>
