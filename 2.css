@@ -195,6 +195,12 @@ a:active {
   height:500px;
   margin:auto;
 }
+.slideshow-pano {
+  display:block;
+  width:100%;
+  height:auto;
+  margin:auto;
+}
 .slideshow-container {
   position:relative;
   height:auto;
