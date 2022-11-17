@@ -197,16 +197,10 @@ a:active {
 }
 .slideshow-img-line {
   display:inline-block;
-  height:500px;
+  width:600px;
   margin:auto;
 }
 .slideshow-img-pano {
-  display:block;
-  width:100%;
-  height:auto;
-  margin:auto;
-}
-.slideshow-pano {
   display:block;
   width:100%;
   height:auto;
