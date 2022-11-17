@@ -45,8 +45,8 @@
                 </p>
 
                 <div id="slideshow2" class="slideshow-container">
-                    <div class="mySlides fade"><img class="slideshow-img-pano" src="media/BG4_2022/221026_1.jpg"></div>
-                    <div class="mySlides fade"><img class="slideshow-img-pano" src="media/BG4_2022/221026_2.jpg"></div>
+                    <div class="slideshow fade"><img class="slideshow-img-pano" src="media/BG4_2022/221026_1.jpg"></div>
+                    <div class="slideshow fade"><img class="slideshow-img-pano" src="media/BG4_2022/221026_2.jpg"></div>
                     <br>
                     <div style="text-align:center">
                         <span class="dot" onclick="currentSlide(1, slideshow2)"></span>
@@ -71,11 +71,11 @@
                     <i class="FigureCaption">2022/06/05 - 2022/09/05</i>
                 </p>
                 <div id="slideshow1" class="slideshow-container">
-                    <div class="mySlides fade"><img class="slideshow-img" src="media/BG4_2022/220605.jpg"></div>
-                    <div class="mySlides fade"><img class="slideshow-img" src="media/BG4_2022/220813.jpg"></div>
-                    <div class="mySlides fade"><img class="slideshow-img" src="media/BG4_2022/220820_2.jpg"></div>
-                    <div class="mySlides fade"><img class="slideshow-img" src="media/BG4_2022/220905_1.jpg"></div>
-                    <div class="mySlides fade"><img class="slideshow-img" src="media/BG4_2022/220905_2.jpg"></div>
+                    <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2022/220605.jpg"></div>
+                    <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2022/220813.jpg"></div>
+                    <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2022/220820_2.jpg"></div>
+                    <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2022/220905_1.jpg"></div>
+                    <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2022/220905_2.jpg"></div>
                     <br>
                     <div style="text-align:center">
                         <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
@@ -116,7 +116,7 @@
             function currentSlide(n, slideshow) {showSlides(slideshow.currentSlideIndex = n, slideshow);}
             function showSlides(n, slideshow) {
                 var i;
-                var slides = slideshow.getElementsByClassName("mySlides");
+                var slides = slideshow.getElementsByClassName("slideshow");
                 var dots = slideshow.getElementsByClassName("dot");
                 if (n > slides.length) {slideshow.currentSlideIndex = 1}    
                 if (n < 1) {slideshow.currentSlideIndex = slides.length}

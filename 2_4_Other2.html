@@ -40,23 +40,23 @@
                     Honestly, it's the largest hare I've ever seen.
                 </p>
                 <div id="slideshow1" class="slideshow-container">
-                    <div class="mySlides fade">
+                    <div class="slideshow fade">
                         <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1"><span class="usaskspan2">April 4, 2021</span></span></h2></div>
                         <video controls style="display:block; width:90%; height:auto; margin:auto"><source src="media/BG4_Other2/210406.mp4"></video>
                     </div>
-                    <div class="mySlides fade">
+                    <div class="slideshow fade">
                         <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1"><span class="usaskspan2">May 6, 2021</span></span></h2></div>
                         <video controls style="display:block; width:90%; height:auto; margin:auto"><source src="media/BG4_Other2/210506.mp4"></video>
                     </div>
-                    <div class="mySlides fade">
+                    <div class="slideshow fade">
                         <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1"><span class="usaskspan2">July 20, 2021</span></span></h2></div>
                         <video controls style="display:block; width:90%; height:auto; margin:auto"><source src="media/BG4_Other2/210720.mp4"></video>
                     </div>
-                    <div class="mySlides fade">
+                    <div class="slideshow fade">
                         <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1"><span class="usaskspan2">August 10, 2021</span></span></h2></div>
                         <video controls style="display:block; width:90%; height:auto; margin:auto"><source src="media/BG4_Other2/210810.mp4"></video>
                     </div>
-                    <div class="mySlides fade">
+                    <div class="slideshow fade">
                         <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1"><span class="usaskspan2">September 13, 2021</span></span></h2></div>
                         <video controls style="display:block; width:90%; height:auto; margin:auto"><source src="media/BG4_Other2/210913.mp4"></video>
                     </div>
@@ -88,7 +88,7 @@
             function currentSlide(n, slideshow) {showSlides(slideshow.currentSlideIndex = n, slideshow);}
             function showSlides(n, slideshow) {
                 var i;
-                var slides = slideshow.getElementsByClassName("mySlides");
+                var slides = slideshow.getElementsByClassName("slideshow");
                 var dots = slideshow.getElementsByClassName("dot");
                 if (n > slides.length) {slideshow.currentSlideIndex = 1}    
                 if (n < 1) {slideshow.currentSlideIndex = slides.length}
