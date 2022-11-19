@@ -187,7 +187,7 @@ a:active {
 
 /* ================================= SLIDESHOW ================================= */
 
-.mySlides {
+.slideshow {
   display:none;
 }
 .slideshow-img {
@@ -195,7 +195,12 @@ a:active {
   height:500px;
   margin:auto;
 }
-.slideshow-pano {
+.slideshow-img-line {
+  display:inline-block;
+  width:400px;
+  margin:auto;
+}
+.slideshow-img-pano {
   display:block;
   width:100%;
   height:auto;
