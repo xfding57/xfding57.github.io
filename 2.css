@@ -269,11 +269,11 @@ a:active {
 }
 .textoverslidestext {color:white}
 .usaskspan1 {
-  background-color:rgb(255,203,0);
+  background-color:rgb(255,255,255);
   padding-left:15px
 }
 .usaskspan2 {
-  background-color:rgb(0,105,62);
+  background-color:rgb(11,106,65);
   padding-left:15px;
   padding-right:15px
 }
@@ -287,11 +287,11 @@ a:active {
   padding-right:15px
 }
 .ryersonspan1 {
-  background-color:rgb(255,220,0);
+  background-color:rgb(234,171,0);
   padding-left:15px
 }
 .ryersonspan2 {
-  background-color:rgb(0,76,155);
+  background-color:rgb(0,52,120);
   padding-left:15px;
   padding-right:15px
 }
