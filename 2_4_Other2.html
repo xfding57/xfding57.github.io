@@ -62,11 +62,11 @@
                     </div>
                     <br>
                     <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
-                        <span class="dot" onclick="currentSlide(2, slideshow1)"></span>
-                        <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
-                        <span class="dot" onclick="currentSlide(4, slideshow1)"></span>
-                        <span class="dot" onclick="currentSlide(5, slideshow1)"></span>
+                        <span class="dot" onclick="currentSlide(1, slideshow3)"></span>
+                        <span class="dot" onclick="currentSlide(2, slideshow3)"></span>
+                        <span class="dot" onclick="currentSlide(3, slideshow3)"></span>
+                        <span class="dot" onclick="currentSlide(4, slideshow3)"></span>
+                        <span class="dot" onclick="currentSlide(5, slideshow3)"></span>
                     </div>
                 </div>
             </a>
@@ -81,9 +81,9 @@
             </div>
         </div>
         <script>
-            var slideshow1 = document.getElementById("slideshow1");
-            slideshow1.currentSlideIndex = 1;
-            showSlides(slideshow1.currentSlideIndex, slideshow1);
+            var slideshow3 = document.getElementById("slideshow3");
+            slideshow3.currentSlideIndex = 1;
+            showSlides(slideshow3.currentSlideIndex, slideshow3);
             function plusSlides(n, slideshow) {showSlides(slideshow.currentSlideIndex += n, slideshow);}
             function currentSlide(n, slideshow) {showSlides(slideshow.currentSlideIndex = n, slideshow);}
             function showSlides(n, slideshow) {
