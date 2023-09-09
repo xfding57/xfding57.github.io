@@ -106,16 +106,18 @@
                     if (event.target == modal) {modal.style.display = "none";}
                 }
             </script>
-            <!-- Footer -->
-            <div class="FooterBox">
-                <a href="https://www.usask.ca/" style="text-decoration:none" target="_blank">
-                    <img class="AffiliationLinks" src="media/Logo_usask.png" alt="University of Saskatchewan">
-                </a>
-                <a href="https://www.lightsource.ca/" style="text-decoration:none" target="_blank">
-                    <img class="AffiliationLinks" src="media/Logo_cls.png" alt="The Canadian Light Source">
-                </a>
-            </div>
+            <!-- Include the footer using JavaScript -->
+            <div id="footer-placeholder"></div>
+            <script>
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "footer.html", true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        document.getElementById("footer-placeholder").innerHTML = xhr.responseText;
+                    }
+                };
+                xhr.send();
+            </script>
         </div>
-
     </body>
 </html>
