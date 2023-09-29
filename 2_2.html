@@ -8,15 +8,12 @@
         <!-- jQuery Show/Hide Effect -->
         <script src="scripts/jquery.min.js"></script>
         <script>
-        $(document).ready(function() {
-            $(".BodyToggle").click(function(){
-                var toggleId = $(this).data('toggle');
-                var targetElement = $("#" + toggleId);
-                if(targetElement.is(':hidden')) {
-                    PDFObject.embed("media/BG2/2023_Biofab.pdf#toolbar=0", "#" + toggleId);
-                }
-                targetElement.toggle();
-            });
+        $(document).ready(function(){
+            for (let i = 1; i <= 5; i++) {
+                $(".BodyToggle" + i).click(function(){
+                    $(".ToggleMessage" + i).toggle();
+                });
+            }
         });
         </script>
         <style type="text/css">
@@ -35,6 +32,9 @@
                 color:rgba(222,222,222,0.5);
                 -webkit-transition-duration:0.4s;
                 transition-duration:0.4s;
+            }
+            .ToggleMessage {
+                display:none
             }
             .pdfobject-container {
                 height:400px;
