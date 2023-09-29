@@ -9,23 +9,9 @@
         <script src="scripts/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
-                $(".BodyToggle1").click(function(){
-                    $(".ToggleMessage1").toggle();
-                });
-            });
-            $(document).ready(function(){
-                $(".BodyToggle2").click(function(){
-                    $(".ToggleMessage2").toggle();
-                });
-            });
-            $(document).ready(function(){
-                $(".BodyToggle3").click(function(){
-                    $(".ToggleMessage3").toggle();
-                });
-            });
-            $(document).ready(function(){
-                $(".BodyToggle5").click(function(){
-                    $(".ToggleMessage5").toggle();
+                $(".BodyToggle").click(function(){
+                    var toggleId = $(this).data("toggle"); // Get the id from data-toggle attribute
+                    $("#" + toggleId).toggle(); // Toggle the corresponding element
                 });
             });
         </script>
@@ -33,28 +19,17 @@
             .BlurBG {
                 background-image:url('media/Header_FFS_let_it_in_desktop.jpg')
             }
-            .BodyToggle1,
-            .BodyToggle2,
-            .BodyToggle3,
-            .BodyToggle5 {
+            .BodyToggle {
                 text-decoration:none;
                 border-bottom:1px dotted white;
-                font-family:Helvetica;
-                font-size:20px;
                 cursor:pointer;
             }
-            .BodyToggle1:hover,
-            .BodyToggle2:hover,
-            .BodyToggle3:hover,
-            .BodyToggle5:hover {
+            .BodyToggle:hover {
                 color:rgba(222,222,222,0.5);
                 -webkit-transition-duration:0.4s;
                 transition-duration:0.4s;
             }
-            .ToggleMessage1,
-            .ToggleMessage2,
-            .ToggleMessage3,
-            .ToggleMessage5 {
+            .ToggleMessage {
                 display:none
             }
         </style>
@@ -91,9 +66,9 @@
                 At the facility I work at, BMIT (Biomedical Imaging and Therapy), we refine hard x-rays from the synchrotron for imaging.
             </p>
             <div style="line-height:2.0">
-                <u class="BodyToggle5">Dynamic CT</u>
+                <u class="BodyToggle">Dynamic CT</u>
                 <div style="line-height:normal">
-                    <div class="ToggleMessage5 fade">
+                    <div class="ToggleMessage fade">
                         <p align="justify">
                             The Canadian Light Source is a third generation synchrotron.
                             One of the advantages of such a facitlity is that CT scans can be performed remarkably faster than a laboratory scanner.
@@ -112,9 +87,9 @@
                 I was working on testing implant safety via a reliable computer simulation and verification through standard experiments.
             </p>
             <div style="line-height:2.0">
-                <u class="BodyToggle1">FEM Simulations</u>
+                <u class="BodyToggle">FEM Simulations</u>
                 <div style="line-height:normal">
-                    <div class="ToggleMessage1 fade">
+                    <div class="ToggleMessage fade">
                         <p align="justify">
                             I mainly did simulations in COMSOL Multiphysics (COMSOL Inc., Sweden), a finite element method solver.
                             I used it to calculate the magnetostatics of geometrically simple objects rotating in a uniform static magnetic field.
@@ -164,9 +139,9 @@
                         <br><br>
                     </div>
                 </div>
-                <u class="BodyToggle2">ASTM Measurements</u>
+                <u class="BodyToggle">ASTM Measurements</u>
                 <div style="line-height:normal">
-                    <div class="ToggleMessage2 fade">
+                    <div class="ToggleMessage fade">
                         <p align="justify">
                             Stainless steel rods were machined for two kinds of tests, magnetically induced deflection and rotation.
                             I only worked on the rotation tests.
@@ -204,9 +179,9 @@
                         <br><br>
                     </div>
                 </div>
-                <u class="BodyToggle3">Apparatus Designs</u>
+                <u class="BodyToggle">Apparatus Designs</u>
                 <div style="line-height:normal">
-                    <div class="ToggleMessage3 fade">
+                    <div class="ToggleMessage fade">
                         <p align="justify">
                              ASTM International is the governing agency for producing standard tests.
                              There are two main methods for measuring magnetically induced torque on medical implants.
