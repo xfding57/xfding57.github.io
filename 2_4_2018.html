@@ -52,7 +52,7 @@
                     <br>
                     <i class="FigureCaption">2018/12/05</i>
                 </p>
-                <div id="slideshow2" class="slideshow-container">
+                <div class="slideshow-container">
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2018/181205_2.jpg"></div>
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2018/181205_3.jpg"></div>
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2018/181205_4.jpg"></div>
@@ -88,7 +88,7 @@
                     <br>
                     <i class="FigureCaption">2018/10/12</i>
                 </p>
-                <div id="slideshow3" class="slideshow-container">
+                <div class="slideshow-container">
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2018/181012_1.jpg"></div>
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2018/181012_2.jpg"></div>
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2018/181012_3.jpg"></div>
@@ -107,7 +107,7 @@
                     <br>
                     <i class="FigureCaption">2018/06/13</i>
                 </p>
-                <div id="slideshow5" class="slideshow-container">
+                <div class="slideshow-container">
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2018/180613_1.jpg"></div>
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2018/180613_3.jpg"></div>
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2018/180613_4.jpg"></div>
@@ -130,7 +130,7 @@
                     <br>
                     <i class="FigureCaption">2018/05/10</i>
                 </p>
-                <div id="slideshow4" class="slideshow-container">
+                <div class="slideshow-container">
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2018/180510_1.jpg"></div>
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2018/180510_2.jpg"></div>
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2018/180510_3.jpg"></div>
@@ -158,30 +158,48 @@
             </script>
         </div>
         <script>
-            var slideshow2 = document.getElementById("slideshow2");
-            slideshow2.currentSlideIndex = 1;
-            showSlides(slideshow2.currentSlideIndex, slideshow2);
-            var slideshow3 = document.getElementById("slideshow3");
-            slideshow3.currentSlideIndex = 1;
-            showSlides(slideshow3.currentSlideIndex, slideshow3);
-            var slideshow4 = document.getElementById("slideshow4");
-            slideshow4.currentSlideIndex = 1;
-            showSlides(slideshow4.currentSlideIndex, slideshow4);
-            var slideshow5 = document.getElementById("slideshow5");
-            slideshow5.currentSlideIndex = 1;
-            showSlides(slideshow5.currentSlideIndex, slideshow5);
-            function plusSlides(n, slideshow) {showSlides(slideshow.currentSlideIndex += n, slideshow);}
-            function currentSlide(n, slideshow) {showSlides(slideshow.currentSlideIndex = n, slideshow);}
+            // Function to initialize a slideshow
+            function initializeSlideshow(slideshow) {
+                slideshow.currentSlideIndex = 1;
+                showSlides(slideshow.currentSlideIndex, slideshow);
+                // Setting up correct onclick event for each dot
+                var dots = slideshow.getElementsByClassName("dot");
+                for(var i = 0; i < dots.length; i++) {
+                    let slideNumber = i + 1;
+                    dots[i].onclick = function() { 
+                        currentSlide(slideNumber, slideshow); 
+                    };
+                }
+            }
+            // Get all the slideshows and initialize them
+            var slideshows = document.getElementsByClassName("slideshow-container");
+            for(var i = 0; i < slideshows.length; i++) {
+                initializeSlideshow(slideshows[i]);
+            }
+            function plusSlides(n, slideshow) {
+                showSlides(slideshow.currentSlideIndex += n, slideshow);
+            }
+            function currentSlide(n, slideshow) {
+                showSlides(slideshow.currentSlideIndex = n, slideshow);
+            }
             function showSlides(n, slideshow) {
                 var i;
                 var slides = slideshow.getElementsByClassName("slideshow");
                 var dots = slideshow.getElementsByClassName("dot");
-                if (n > slides.length) {slideshow.currentSlideIndex = 1}    
-                if (n < 1) {slideshow.currentSlideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
-                for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active", "");}
-                slides[slideshow.currentSlideIndex-1].style.display = "block";  
-                dots[slideshow.currentSlideIndex-1].className += " active";
+                if (n > slides.length) {
+                    slideshow.currentSlideIndex = 1
+                }
+                if (n < 1) {
+                    slideshow.currentSlideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideshow.currentSlideIndex - 1].style.display = "block";
+                dots[slideshow.currentSlideIndex - 1].className += " active";
             }
         </script>
     </body>

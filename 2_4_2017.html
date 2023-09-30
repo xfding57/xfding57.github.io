@@ -75,7 +75,7 @@
                     I think this was a mandatory event for new students, but I skipped it.
                     I'm terrible with new people and I didn't want to introduce myself to a crowd.
                 </p>
-                <div id="slideshow12" class="slideshow-container">
+                <div class="slideshow-container">
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2017/170908_1.jpg"></div>
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2017/170908_2.jpg"></div>
                     <div class="slideshow fade"><img class="slideshow-img" src="media/BG4_2017/170908_3.jpg"></div>
@@ -112,21 +112,48 @@
             </script>
         </div>
         <script>
-            var slideshow12 = document.getElementById("slideshow12");
-            slideshow12.currentSlideIndex = 1;
-            showSlides(slideshow12.currentSlideIndex, slideshow12);
-            function plusSlides(n, slideshow) {showSlides(slideshow.currentSlideIndex += n, slideshow);}
-            function currentSlide(n, slideshow) {showSlides(slideshow.currentSlideIndex = n, slideshow);}
+            // Function to initialize a slideshow
+            function initializeSlideshow(slideshow) {
+                slideshow.currentSlideIndex = 1;
+                showSlides(slideshow.currentSlideIndex, slideshow);
+                // Setting up correct onclick event for each dot
+                var dots = slideshow.getElementsByClassName("dot");
+                for(var i = 0; i < dots.length; i++) {
+                    let slideNumber = i + 1;
+                    dots[i].onclick = function() { 
+                        currentSlide(slideNumber, slideshow); 
+                    };
+                }
+            }
+            // Get all the slideshows and initialize them
+            var slideshows = document.getElementsByClassName("slideshow-container");
+            for(var i = 0; i < slideshows.length; i++) {
+                initializeSlideshow(slideshows[i]);
+            }
+            function plusSlides(n, slideshow) {
+                showSlides(slideshow.currentSlideIndex += n, slideshow);
+            }
+            function currentSlide(n, slideshow) {
+                showSlides(slideshow.currentSlideIndex = n, slideshow);
+            }
             function showSlides(n, slideshow) {
                 var i;
                 var slides = slideshow.getElementsByClassName("slideshow");
                 var dots = slideshow.getElementsByClassName("dot");
-                if (n > slides.length) {slideshow.currentSlideIndex = 1}    
-                if (n < 1) {slideshow.currentSlideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
-                for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active", "");}
-                slides[slideshow.currentSlideIndex-1].style.display = "block";  
-                dots[slideshow.currentSlideIndex-1].className += " active";
+                if (n > slides.length) {
+                    slideshow.currentSlideIndex = 1
+                }
+                if (n < 1) {
+                    slideshow.currentSlideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideshow.currentSlideIndex - 1].style.display = "block";
+                dots[slideshow.currentSlideIndex - 1].className += " active";
             }
         </script>
     </body>

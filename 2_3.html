@@ -96,7 +96,7 @@
                             I started off with a sphere and infinitely long cylinder.
                             The solutions to both cases are known so the simulated results can be verified with known analytic solutions.
                         </p>
-                        <div id="slideshow1" class="slideshow-container">
+                        <div class="slideshow-container">
                             <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_uwo/Modeling.jpg"></div>
                             <div class="slideshow fade"><img class="slideshow-img" style="width:auto; height:407" src="media/BG3_uwo/COMSOL_sph_y.gif"></div>
                             <div class="slideshow fade"><img class="slideshow-img" style="width:auto; height:407" src="media/BG3_uwo/COMSOL_cyl_y.gif"></div>
@@ -114,7 +114,7 @@
                             The two diameters used were 0.5 and 0.25 inches with lengths of 3, 5, 7, and 9 cm.
                             The supplier of the raw material is an American company, so the rods were sold in inches but being a Canadian institution, the lengths were machined to specifications in metric.
                         </p>
-                        <div id="slideshow2" class="slideshow-container">
+                        <div class="slideshow-container">
                             <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_uwo/CYL_COMSOL.jpg"></div>
                             <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_uwo/CYL_3cm.jpg"></div>
                             <div class="slideshow fade"><img class="slideshow-img" style="width:auto; height:407" src="media/BG3_uwo/CYL_3cm_B.gif"></div>
@@ -161,7 +161,7 @@
                             The apparatus used was designed from the ground up but followed the specifications from the ASTM International.
                             Specifically, it was designed according to ASTM F2213-17. The experimental measurements were taken on a 3 T GE scanner.
                         </p>
-                        <div id="slideshow5" class="slideshow-container">
+                        <div class="slideshow-container">
                             <div class="slideshow fade"><img class="slideshow-img" src="media/BG3_uwo/Aparatus_holderthin.jpg"></div>
                             <div class="slideshow fade"><img class="slideshow-img" src="media/BG3_uwo/Aparatus_holderthick.jpg"></div>
                             <div class="slideshow fade"><img class="slideshow-img" src="media/BG3_uwo/Aparatus.jpg"></div>
@@ -198,7 +198,7 @@
                              </div>
                          </div>
                          <p align="justify">One may outperform the other.</p>
-                         <div id="slideshow8" class="slideshow-container">
+                         <div class="slideshow-container">
                              <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_uwo/Data1.jpg"></div>
                              <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_uwo/Data2.jpg"></div>
                              <br>
@@ -224,36 +224,48 @@
             </script>
         </div>
         <script>
-            var slideshow1 = document.getElementById("slideshow1");
-            slideshow1.currentSlideIndex = 1;
-            showSlides(slideshow1.currentSlideIndex, slideshow1);
-            var slideshow2 = document.getElementById("slideshow2");
-            slideshow2.currentSlideIndex = 1;
-            showSlides(slideshow2.currentSlideIndex, slideshow2);
-            var slideshow4 = document.getElementById("slideshow4");
-            slideshow4.currentSlideIndex = 1;
-            showSlides(slideshow4.currentSlideIndex, slideshow4);
-            var slideshow5 = document.getElementById("slideshow5");
-            slideshow5.currentSlideIndex = 1;
-            showSlides(slideshow5.currentSlideIndex, slideshow5);
-            var slideshow7 = document.getElementById("slideshow7");
-            slideshow7.currentSlideIndex = 1;
-            showSlides(slideshow7.currentSlideIndex, slideshow7);
-            var slideshow8 = document.getElementById("slideshow8");
-            slideshow8.currentSlideIndex = 1;
-            showSlides(slideshow8.currentSlideIndex, slideshow8);
-            function plusSlides(n, slideshow) {showSlides(slideshow.currentSlideIndex += n, slideshow);}
-            function currentSlide(n, slideshow) {showSlides(slideshow.currentSlideIndex = n, slideshow);}
+            // Function to initialize a slideshow
+            function initializeSlideshow(slideshow) {
+                slideshow.currentSlideIndex = 1;
+                showSlides(slideshow.currentSlideIndex, slideshow);
+                // Setting up correct onclick event for each dot
+                var dots = slideshow.getElementsByClassName("dot");
+                for(var i = 0; i < dots.length; i++) {
+                    let slideNumber = i + 1;
+                    dots[i].onclick = function() { 
+                        currentSlide(slideNumber, slideshow); 
+                    };
+                }
+            }
+            // Get all the slideshows and initialize them
+            var slideshows = document.getElementsByClassName("slideshow-container");
+            for(var i = 0; i < slideshows.length; i++) {
+                initializeSlideshow(slideshows[i]);
+            }
+            function plusSlides(n, slideshow) {
+                showSlides(slideshow.currentSlideIndex += n, slideshow);
+            }
+            function currentSlide(n, slideshow) {
+                showSlides(slideshow.currentSlideIndex = n, slideshow);
+            }
             function showSlides(n, slideshow) {
                 var i;
                 var slides = slideshow.getElementsByClassName("slideshow");
                 var dots = slideshow.getElementsByClassName("dot");
-                if (n > slides.length) {slideshow.currentSlideIndex = 1}    
-                if (n < 1) {slideshow.currentSlideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
-                for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active", "");}
-                slides[slideshow.currentSlideIndex-1].style.display = "block";  
-                dots[slideshow.currentSlideIndex-1].className += " active";
+                if (n > slides.length) {
+                    slideshow.currentSlideIndex = 1
+                }
+                if (n < 1) {
+                    slideshow.currentSlideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideshow.currentSlideIndex - 1].style.display = "block";
+                dots[slideshow.currentSlideIndex - 1].className += " active";
             }
         </script>
     </body>
