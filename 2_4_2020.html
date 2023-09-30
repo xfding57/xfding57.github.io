@@ -115,13 +115,23 @@
             </script>
         </div>
         <script>
-            // Get all elements with class 'slideshow-container'
-            var slideshows = document.getElementsByClassName('slideshow-container');
-            // Loop over all found slideshow containers
-            for (var i = 0; i < slideshows.length; i++) {
-                // Initialize currentSlideIndex and show the first slide
-                slideshows[i].currentSlideIndex = 1;
-                showSlides(slideshows[i].currentSlideIndex, slideshows[i]);
+            // Function to initialize a slideshow
+            function initializeSlideshow(slideshow) {
+                slideshow.currentSlideIndex = 1;
+                showSlides(slideshow.currentSlideIndex, slideshow);
+                // Setting up correct onclick event for each dot
+                var dots = slideshow.getElementsByClassName("dot");
+                for(var i = 0; i < dots.length; i++) {
+                    let slideNumber = i + 1;
+                    dots[i].onclick = function() { 
+                        currentSlide(slideNumber, slideshow); 
+                    };
+                }
+            }
+            // Get all the slideshows and initialize them
+            var slideshows = document.getElementsByClassName("slideshow-container");
+            for(var i = 0; i < slideshows.length; i++) {
+                initializeSlideshow(slideshows[i]);
             }
             function plusSlides(n, slideshow) {
                 showSlides(slideshow.currentSlideIndex += n, slideshow);
@@ -133,20 +143,12 @@
                 var i;
                 var slides = slideshow.getElementsByClassName("slideshow");
                 var dots = slideshow.getElementsByClassName("dot");
-                if (n > slides.length) {
-                    slideshow.currentSlideIndex = 1
-                }    
-                if (n < 1) {
-                    slideshow.currentSlideIndex = slides.length
-                }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideshow.currentSlideIndex-1].style.display = "block";  
-                dots[slideshow.currentSlideIndex-1].className += " active";
+                if (n > slides.length) { slideshow.currentSlideIndex = 1 }
+                if (n < 1) { slideshow.currentSlideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+                for (i = 0; i < dots.length; i++) { dots[i].className = dots[i].className.replace(" active", ""); }
+                slides[slideshow.currentSlideIndex - 1].style.display = "block";
+                dots[slideshow.currentSlideIndex - 1].className += " active";
             }
         </script>
     </body>
