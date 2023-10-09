@@ -174,8 +174,10 @@ a:active {
   transform: scale(1.1);
 }
 .HiddenLinks{
-  text-decoration:none;  
   color:rgba(222,222,222,1);
+  background-color:transparent;
+  text-decoration:none;
+  cursor: default;
 }
 .FigureCaption {
   text-decoration:none;
