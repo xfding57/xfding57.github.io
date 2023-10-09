@@ -121,11 +121,10 @@ a:link,
 a:visited, 
 a:hover, 
 a:active {
-  color:rgb(222,222,222);
+  color:rgba(222,222,222,1);
   background-color:transparent;
   text-decoration:none;
 }
-
 .MainLinks:hover {
   text-decoration:underline;
   color:rgba(0,0,0,1);
@@ -133,7 +132,6 @@ a:active {
   -webkit-transition-duration:0.4s;
   transition-duration:0.4s;
 }
-
 .BodyLinks {
   text-decoration:none;
   border-bottom:1px dotted white;
@@ -150,7 +148,6 @@ a:active {
   -webkit-transition-duration:0.4s;
   transition-duration:0.4s;
 }
-
 /* 
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0} to {top:0; opacity:1}
@@ -176,7 +173,10 @@ a:active {
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
 }
-
+.HiddenLinks{
+  text-decoration:none;  
+  color:rgba(222,222,222,1);
+}
 .FigureCaption {
   text-decoration:none;
   line-height:2;
