@@ -156,7 +156,6 @@ a:active {
   from {top:-300px; opacity:0} to {top:0; opacity:1}
 }
  */
-
 .AffiliationLinks {
   padding-left:25px;
   padding-right:25px;
@@ -169,15 +168,15 @@ a:active {
   cursor:pointer;
 }
 .AffiliationLinks:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
+  -ms-transform:scale(1.1); /* IE 9 */
+  -webkit-transform:scale(1.1); /* Safari 3-8 */
+  transform:scale(1.1);
 }
 .HiddenLinks{
   color:rgba(222,222,222,1);
   background-color:transparent;
   text-decoration:none;
-  cursor: default;
+  cursor:text;
 }
 .FigureCaption {
   text-decoration:none;
@@ -227,7 +226,6 @@ a:active {
 .dot:hover {
   background-color:#717171
 }
-
 /* Fading animation */
 .fade {
   -webkit-animation-name:fade;
@@ -241,7 +239,6 @@ a:active {
 @keyframes fade {
   from {opacity:0.4} to {opacity:1}
 }
-
 /* Auto fade slideshow */
 .fade-auto{
     -webkit-animation-name:fade-auto;
@@ -257,7 +254,6 @@ a:active {
     0%,100% {opacity:0}
     10%,70% {opacity:1}
 }
-
 /* Over picture text caption */
 .textoverslidesdiv {
   float:left;
