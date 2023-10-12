@@ -23,18 +23,14 @@
             <h1>Xiao Fan Ding</h1>
             <p>BSc&emsp;MSc</p>
         </div>
-        <!-- Include the linkbox using JavaScript -->
-        <div id="linkbox-placeholder"></div>
-        <script>
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "linkbox.html", true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById("linkbox-placeholder").innerHTML = xhr.responseText;
-                }
-            };
-            xhr.send();
-        </script>
+        <div class="LinkBox">
+            <a class="MainLinks" href="2_0.html">&emsp;Home&emsp;</a>
+            <a class="MainLinks" href="2_1.html">&emsp;About&emsp;</a>
+            <a class="MainLinks" href="2_2.html">&emsp;Vitae&emsp;</a>
+            <a class="MainLinks" href="2_3.html">&emsp;Research&emsp;</a>
+            <a class="MainLinks" href="2_4.html">&emsp;History&emsp;</a>
+            <a class="MainLinks" href="2_5.html">&emsp;Contact&emsp;</a>
+        </div>
         <!-- Body -->
         <div class="BodyBox">
             <h2 class="HeadingLevel1">2019</h2>
