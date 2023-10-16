@@ -9,11 +9,6 @@
             .BlurBG {
                 background-image:url('media/Header_FFS_because_spring_desktop.jpg')
             }
-            .slideshow-img {
-                width:100%;
-                height:auto;
-                opacity: 1;
-            }
         </style>
     </head>
     <body>
@@ -40,7 +35,7 @@
         <div class="BodyBox">
             <h2 class="HeadingLevel1">Home</h2>
             <h2 class="HeadingLevel1">Recent Events</h2>
-            <div class="slideshow-container" style="padding-top:75px">
+            <div class="slideshow-container">
                 <div class="slideshow fade-auto" style="position:relative">
                     <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1">
                         <span class="usaskspan2">Biofabrication 2023</span></span></h2>
@@ -110,19 +105,48 @@
             </script>
         </div>
         <script>
-            var slideIndex = 0;
-            showSlides();
-            function showSlides() {
+            // Function to initialize a slideshow
+            function initializeSlideshow(slideshow) {
+                slideshow.currentSlideIndex = 1;
+                showSlides(slideshow.currentSlideIndex, slideshow);
+                // Setting up correct onclick event for each dot
+                var dots = slideshow.getElementsByClassName("dot");
+                for(var i = 0; i < dots.length; i++) {
+                    let slideNumber = i + 1;
+                    dots[i].onclick = function() { 
+                        currentSlide(slideNumber, slideshow); 
+                    };
+                }
+            }
+            // Get all the slideshows and initialize them
+            var slideshows = document.getElementsByClassName("slideshow-container");
+            for(var i = 0; i < slideshows.length; i++) {
+                initializeSlideshow(slideshows[i]);
+            }
+            function plusSlides(n, slideshow) {
+                showSlides(slideshow.currentSlideIndex += n, slideshow);
+            }
+            function currentSlide(n, slideshow) {
+                showSlides(slideshow.currentSlideIndex = n, slideshow);
+            }
+            function showSlides(n, slideshow) {
                 var i;
-                var slides = document.getElementsByClassName("slideshow");
-                var dots = document.getElementsByClassName("dot");
-                for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
-                slideIndex++;
-                if (slideIndex > slides.length) {slideIndex = 1}
-                for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active", "");}
-                slides[slideIndex-1].style.display = "block";  
-                dots[slideIndex-1].className += " active";
-                setTimeout(showSlides, 5000); // Change image time in milliseconds
+                var slides = slideshow.getElementsByClassName("slideshow");
+                var dots = slideshow.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideshow.currentSlideIndex = 1
+                }
+                if (n < 1) {
+                    slideshow.currentSlideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideshow.currentSlideIndex - 1].style.display = "block";
+                dots[slideshow.currentSlideIndex - 1].className += " active";
             }
         </script>
     </body>
