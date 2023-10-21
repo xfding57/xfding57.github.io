@@ -1,19 +1,10 @@
 body {
   background-color:rgb(0,0,0);
   background-size:auto;
-  font-family:Helvetica;
-  font-weight:300;
+  font-family:Raleway;
+  font-weight:100;
   font-size:20px;
   color:rgb(222,222,222);
-}
-
-/* ================================= TEXT ================================= */
-
-.HeadingLevel1 {
-  font-family:Helvetica
-}
-.HeadingLevel2 {
-  font-family:Helvetica
 }
 
 /* ================================= HEADER ================================= */
@@ -136,7 +127,6 @@ a:active {
 .BodyLinks {
   text-decoration:none;
   border-bottom:1px dotted white;
-  font-family:Helvetica;
   font-size:20px;
 }
 .ReferenceLink {
@@ -182,7 +172,6 @@ a:active {
 .FigureCaption {
   text-decoration:none;
   line-height:2;
-  font-family:Helvetica;
   font-size:13px;
   font-weight:lighter;
 }
@@ -298,7 +287,6 @@ a:active {
 /* ================================= CONTACT FORM ================================= */
 
 .input_box {
-  font-family:'Helvetica';
   font-size:15px;
   width:400px;
 }
@@ -308,7 +296,6 @@ a:active {
   text-align:center;
   text-decoration:none;
   border:1px solid white;
-  font-family:Helvetica;
   font-size:20px;
   cursor:pointer;
 }
