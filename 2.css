@@ -372,30 +372,3 @@ a:active {
 ::-webkit-scrollbar-thumb:hover {
   background:rgb(100,100,100)
 }
-
-/* ================================= DROPDOWN MENU ================================= */
-
-.dropdown {
-  position:relative;
-  display:inline-block;
-}
-.dropdown-content {
-  position:absolute;
-  display:none;
-  background-color: rgba(0,0,0,1);
-  z-index:3;
-}
-.dropdown-content a {
-  font-size:17px;
-  color: rgba(222,222,222,1);
-  text-align:left;
-  padding:15px;
-  text-decoration:none;
-  display:block;
-}
-.dropdown:hover .dropdown-content {
-  display:block
-}
-.dropdown-content a:hover {
-  color:rgba(222,222,222,0.5)
-}
