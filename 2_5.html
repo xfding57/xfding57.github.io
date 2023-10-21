@@ -43,38 +43,26 @@
             <!-- third party messaging from formspree
             <form action="https://formspree.io/f/mknkpwbe" method="POST">
              -->
-                <p>
-                    Your Name
-                    <br>
-                    <input class="input_box" style="width:200px;" type="text" name="firstname" placeholder="First Name">
-                    <input class="input_box" style="width:200px;" type="text" name="lastname" placeholder="Last Name">
-                </p>
-                <p>
-                    Affiliation
-                    <br>
-                    <input class="input_box" type="text" name="affiliation" placeholder="Affiliation">
-                </p>
-                <p>
-                    Return Address
-                    <br>
-                    <input class="input_box" type="text" name="youremail" placeholder="Your Email">
-                </p>
-                <p>
-                    Subject
-                    <br>
-                    <input class="input_box" type="text" name="subject" placeholder="Subject">
-                </p>
-                <p>
-                    Message
-                    <br>
-                    <textarea style="font-family:'Helvetica';font-size:15px;" rows="10" cols="50" type="text" name="message" placeholder="Message"></textarea>
-                </p>
-                <!-- Formspree Button
-                <p><button class="submit_button" type="submit" name="submit">Send</button></p>
-                -->
+            <p>
+                <input class="input_box" style="width:200px;" type="text" name="firstname" placeholder="First Name">
+                <input class="input_box" style="width:200px;" type="text" name="lastname" placeholder="Last Name">
+                <br>
+                <input class="input_box" type="text" name="affiliation" placeholder="Affiliation">
+                <br>
+                <input class="input_box" type="text" name="youremail" placeholder="Your Email">
+                <br>
+                <input class="input_box" type="text" name="subject" placeholder="Subject">
+                <br>
+                <textarea style="font-family:'Helvetica';font-size:15px;" rows="10" cols="50" type="text" name="message" placeholder="Message"></textarea>
+            </p>
+            <!-- Formspree Button
+            <p><button class="submit_button" type="submit" name="submit">Send</button></p>
+            -->
             <!-- </form> -->
             <!-- Modal Error Message Button -->
-            <p><button class="submit_button" id="myBtn">Send</button></p>
+            <p>
+                <button class="submit_button" id="myBtn">Send</button>
+            </p>
             <!-- Modal Window --> 
             <div class="modal" id="myModal">
                 <div class="modal_content">
