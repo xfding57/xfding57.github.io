@@ -31,14 +31,14 @@
         <!-- Link Box -->
         <div id="linkbox-placeholder"></div>
         <script>
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "linkbox.html", true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById("linkbox-placeholder").innerHTML = xhr.responseText;
+            var xhrlinkbox = new XMLHttpRequest();
+            xhrlinkbox.open("GET", "linkbox.html", true);
+            xhrlinkbox.onreadystatechange = function () {
+                if (xhrlinkbox.readyState === 4 && xhrlinkbox.status === 200) {
+                    document.getElementById("linkbox-placeholder").innerHTML = xhrlinkbox.responseText;
                 }
             };
-            xhr.send();
+            xhrlinkbox.send();
         </script>
         <!-- Body -->
         <div class="BodyBox">
