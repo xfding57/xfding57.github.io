@@ -286,8 +286,12 @@ a:active {
 /* ================================= CONTACT FORM ================================= */
 
 .input_box {
-  font-size:15px;
-  width:400px;
+  font-size:20px;
+  width:405px;
+}
+.input_message_box {
+  font-size:20px;
+  width:405px;
 }
 .submit_button {
   background-color:rgba(255,255,255,0);
