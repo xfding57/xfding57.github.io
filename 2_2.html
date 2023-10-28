@@ -204,10 +204,12 @@
                         </ol>
                     </div>
                 </a>
-            	<a id="conferred_presentations">
+                <a id="conferred_presentations">
                     <h3 class="HeadingLevel2" align="center">
-            	        <b>Conferred Presentations</b>
+                        <b>Conferred Presentations</b>
                     </h3>
+                    <button id="openAllBtn">Open All</button>
+                    <button id="closeAllBtn">Close All</button>
                     <div style="line-height:normal">
                         <ol>
                             <li class="biblist">
@@ -424,6 +426,25 @@
                     }
                 };
                 xhr.send();
+            </script>
+            <script>
+                $(document).ready(function () {
+                    // Function to open all PDF toggles
+                    $("#openAllBtn").click(function () {
+                        $(".ToggleMessage").show();
+                    });
+
+                    // Function to close all PDF toggles
+                    $("#closeAllBtn").click(function () {
+                        $(".ToggleMessage").hide();
+                    });
+
+                    // Individual PDF toggle click handler (if needed)
+                    $(".BodyToggle").click(function () {
+                        var toggleId = $(this).data("toggle");
+                        $("#" + toggleId).toggle();
+                    });
+                });
             </script>
         </div>
     </body>
