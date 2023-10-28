@@ -23,13 +23,18 @@
             <h1>Xiao Fan Ding</h1>
             <p>BSc&emsp;MSc</p>
         </div>
-        <div class="LinkBox">
-            <a class="MainLinks" href="2_0.html">&emsp;Home&emsp;</a>
-            <a class="MainLinks" href="2_2.html">&emsp;Vitae&emsp;</a>
-            <a class="MainLinks" href="2_3.html">&emsp;Research&emsp;</a>
-            <a class="MainLinks" href="2_4.html">&emsp;History&emsp;</a>
-            <a class="MainLinks" href="2_5.html">&emsp;Contact&emsp;</a>
-        </div>
+        <!-- Link Box -->
+        <div id="linkbox-placeholder"></div>
+        <script>
+            var xhrlinkbox = new XMLHttpRequest();
+            xhrlinkbox.open("GET", "linkbox.html", true);
+            xhrlinkbox.onreadystatechange = function () {
+                if (xhrlinkbox.readyState === 4 && xhrlinkbox.status === 200) {
+                    document.getElementById("linkbox-placeholder").innerHTML = xhrlinkbox.responseText;
+                }
+            };
+            xhrlinkbox.send();
+        </script>
         <!-- Body -->
         <div class="BodyBox">
             <h2 class="HeadingLevel1">2017</h2>
