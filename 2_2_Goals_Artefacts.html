@@ -8,17 +8,8 @@
         <!-- jQuery Show/Hide Effect -->
         <script src="scripts/PDFObject-2.2.6/pdfobject.js"></script>
         <script>
-            $(document).ready(function () {
-                // Function to open all PDF toggles
-                $("#OpenAllToggle").click(function () {
-                    $(".ToggleMessage").show();
-                });
-                // Function to close all PDF toggles
-                $("#CloseAllToggle").click(function () {
-                    $(".ToggleMessage").hide();
-                });
-                // Individual PDF toggle click handler (if needed)
-                $(".BodyToggle").click(function () {
+            $(document).ready(function(){
+                $(".BodyToggle").click(function(){
                     var toggleId = $(this).data("toggle"); // Get the id from data-toggle attribute
                     $("#" + toggleId).toggle(); // Toggle the corresponding element
                 });
