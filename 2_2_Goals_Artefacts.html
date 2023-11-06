@@ -195,9 +195,9 @@
                 <u class="BodyToggle" data-toggle="Toggle42">Prior Learning Artefacts</u>
                 <div style="line-height:normal">
                     <div class="ToggleMessage fade" id="Toggle42">
-                        <img class="LearningArtefactLink" src="media/GPS/210920-WHIMIS-exp2024_page-0001.jpg"style="width:400px;">
-                        <img class="LearningArtefactLink" src="media/GPS/210921-LaboratorySafety-exp2024_page-0001.jpg"style="width:400px;">
-                        <img class="LearningArtefactLink" src="media/GPS/210921-SafetyOrientatioEmployees_page-0001.jpg"style="width:400px;">
+                        <img src="media/GPS/210920-WHIMIS-exp2024_page-0001.jpg"style="width:400px;">
+                        <img src="media/GPS/210921-LaboratorySafety-exp2024_page-0001.jpg"style="width:400px;">
+                        <img src="media/GPS/210921-SafetyOrientatioEmployees_page-0001.jpg"style="width:400px;">
                         <img src="media/GPS/210921-SafetyOrientatioSupervisor-exp2028_page-0001.jpg"style="width:400px;">
                         <img src="media/GPS/220129-BiosafetyTraining-exp2025_page-0001.jpg"style="width:400px;">
                         <img src="media/GPS/220610-UACC-Ethics-Laboratory-Animals_page-0001.jpg"style="width:400px;">
@@ -209,50 +209,20 @@
                 </div>
             </div>
             <script>
-                // Function to open a modal
-                function openModal(modalId) {
-                    var modal = document.getElementById(modalId);
-                    if (modal) {
-                        modal.style.display = "block";
-                    }
+                // Modal Window
+                modal = document.getElementById('myModal1');
+                var btn = document.getElementById("myBtn1");
+                var span = document.getElementsByClassName("modal_close")[0];
+                btn.onclick = function() {
+                    modal.style.display = "block";
                 }
-                // Function to close a modal
-                function closeModal(modalId) {
-                    var modal = document.getElementById(modalId);
-                    if (modal) {
-                        modal.style.display = "none";
-                    }
+                span.onclick = function() {
+                    modal.style.display = "none";
                 }
-                // Initialize modals
-                function initModals() {
-                    // Set up the click event on buttons to open modals
-                    var btns = document.querySelectorAll("[data-modal-target]");
-                    btns.forEach(function(btn) {
-                        btn.addEventListener('click', function() {
-                            var modalId = btn.getAttribute('data-modal-target');
-                            openModal(modalId);
-                        });
-                    });
-                    // Set up the click event on close buttons
-                    var spans = document.querySelectorAll(".close");
-                    spans.forEach(function(span) {
-                        span.addEventListener('click', function() {
-                            var modalId = span.closest('.modal').getAttribute('id');
-                            closeModal(modalId);
-                        });
-                    });
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.addEventListener('click', function(event) {
-                        var modals = document.querySelectorAll('.modal');
-                        modals.forEach(function(modal) {
-                            if (event.target == modal) {
-                                closeModal(modal.getAttribute('id'));
-                            }
-                        });
-                    });
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {modal.style.display = "none";}
                 }
-                // Initialize modals when the document is fully loaded
-                document.addEventListener('DOMContentLoaded', initModals);
             </script>
             <!-- Include the footer using JavaScript -->
             <div id="footer-placeholder"></div>
