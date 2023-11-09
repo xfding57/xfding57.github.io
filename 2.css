@@ -93,6 +93,15 @@ body {
   -webkit-transition-duration:0.4s;
   transition-duration:0.4s;
 }
+.biblist {
+    margin-bottom:10px;
+}
+.flex-container {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    line-height:normal;
+}
 
 /* ================================= FOOTER ================================= */
 
@@ -281,6 +290,22 @@ a:active {
   background-color:rgb(0,52,120);
   padding-left:15px;
   padding-right:15px
+}
+
+/* ================================= SLIDESHOW ================================= */
+
+.BodyToggle {
+    text-decoration:none;
+    border-bottom:1px dotted white;
+    cursor:pointer;
+}
+.BodyToggle:hover {
+    color:rgba(222,222,222,0.5);
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+}
+.ToggleMessage {
+    display:none
 }
 
 /* ================================= CONTACT FORM ================================= */
