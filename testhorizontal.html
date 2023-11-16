@@ -6,29 +6,22 @@
         <title>Xiao Fan Ding, M.Sc.</title>
         <meta charset="utf-8">
         <!-- jQuery Show/Hide Effect -->
-        <script src="scripts/PDFObject-2.2.6/pdfobject.js"></script>
         <script src="scripts/jquery.min.js"></script>
-        <script src="scripts/pdfjs-4.0.189-dist/build/pdf.mjs"></script>
-        <script src="scripts/pdfjs-4.0.189-dist/build/pdf.worker.mjs"></script>
-        <script>
-            function renderPDF(url, container) {
-                pdfjsLib.getDocument(url).promise.then(pdfDoc => {
-                    for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
-                        pdfDoc.getPage(pageNum).then(page => {
-                            var canvas = document.createElement('canvas');
-                            var context = canvas.getContext('2d');
-                            var viewport = page.getViewport({
-                                scale: 1
-                            });
-                            canvas.height = viewport.height;
-                            canvas.width = viewport.width;
-                            page.render({
-                                canvasContext: context, viewport: viewport
-                            });
-                            document.getElementById(container).appendChild(canvas);
-                        });
-                    }
-                });
+        <script type="module">
+            import pdfjsLib from '/scripts/pdfjs-4.0.189-dist/build/pdf.mjs';
+            import pdfjsLib from '/scripts/pdfjs-4.0.189-dist/build/pdf.worker.mjs';
+            async function renderPDF(url, container) {
+                const pdfDoc = await pdfjsLib.getDocument(url).promise;
+                for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
+                    const page = await pdfDoc.getPage(pageNum);
+                    var canvas = document.createElement('canvas');
+                    var context = canvas.getContext('2d');
+                    var viewport = page.getViewport({scale: 1});
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+                    await page.render({canvasContext: context, viewport: viewport}).promise;
+                    document.getElementById(container).appendChild(canvas);
+                }
             }
         </script>
         <script>
@@ -45,11 +38,7 @@
                 });
             });
         </script>
-        <style type="text/css">
-            .pdfobject-container {
-                height:500px;
-                border:10px solid rgba(0,0,0,0); 
-            }
+        <style>
             #pdf-container {
                 width: 100%;
                 overflow-x: scroll;
@@ -70,7 +59,10 @@
                                 <i>2023 CLS Annual User Meeting.</i> 
                                 Saskatoon SK, Canada, October 2023 <u class="BodyToggle fade" data-toggle="Toggle6">(Poster)</u>
                             </li>
-                            <script>renderPDF('media/BG2/2023_CLS_AUM.pdf','pdf-container');</script>
+
+                            <button onclick="renderPDF('media/BG2/2023_CLS_AUM.pdf', 'pdf-container')">View PDF</button>
+                            <div id="pdf-container"></div>
+
                             <li class="biblist">
                                 <b>XF Ding</b>, X Duan, N Li, D Chen, and N Zhu.
                                 Automatic 3D Segmentation of Hydrogel Scaffolds Based on PBI-uCT.
