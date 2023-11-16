@@ -11,7 +11,13 @@
             $(document).ready(function(){
                 $(".BodyToggle").click(function(){
                     var toggleId = $(this).data("toggle"); // Get the id from data-toggle attribute
-                    $("#" + toggleId).toggle(); // Toggle the corresponding element
+                    var targetElement = $("#" + toggleId);
+
+                    if(targetElement.is(":visible")) {
+                        targetElement.slideUp(); // Slide up if element is visible
+                    } else {
+                        targetElement.slideDown(); // Slide down if element is hidden
+                    }
                 });
             });
         </script>
