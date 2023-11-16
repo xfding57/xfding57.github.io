@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+    <head>
+        <link rel="stylesheet" href="2.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <title>Xiao Fan Ding, M.Sc.</title>
+        <meta charset="utf-8">
+        <!-- jQuery Show/Hide Effect -->
+        <script src="scripts/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".BodyToggle").click(function(){
+                    var toggleId = $(this).data("toggle"); // Get the id from data-toggle attribute
+                    $("#" + toggleId).toggle(); // Toggle the corresponding element
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="BodyBox", style="text-align:justify">
+            <h2 class="HeadingLevel1">Goal 1: Enhance my scientific communication skills</h2>
+            <div style="line-height:2.0">
+                <u class="BodyToggle" data-toggle="Toggle11">SMART Goal Breakdown</u>
+                <div style="line-height:normal">
+                    <div class="ToggleMessage fade" id="Toggle11">
+                        <p align="justify">
+                            <b>Specific:</b> During this term, I want to improve my ability to present one of my research projects. I have some data collected earlier in May and August and have a manuscript draft completed. There are several conferences and meetings this semester where I can practice and present my research.
+                            <br><b>Measurable:</b> My progress will be tracked by counting the number of attendees I engage with and introduce my research to at each conference.
+                            <br><b>Achievable:</b> I will showcase my research project via poster presentations at three conferences: the Biofabrication conference in September, Canadian Light Source Annual User Meeting in October, and the INSPIRE Workshop in December. These conferences are designed to foster graduate students’ communication abilities. After each conference, I will reflect on feedback and refine my presentations.
+                            <br><b>Relevant:</b> I remember at my first conference; I was so terribly afraid of criticism that I watched from afar as others walked by and glanced at my poster. I now know that engagement and feedback is critical for improving my work.
+                            <br><b>Time-bound:</b> I aim to present at these conference presentations over the next 3 months to improve my scientific communication.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
