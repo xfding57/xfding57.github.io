@@ -7,28 +7,6 @@
         <meta charset="utf-8">
         <!-- jQuery Show/Hide Effect -->
         <script src="scripts/jquery.min.js"></script>
-        <script type="module">
-            import pdfjsLib from '/scripts/pdfjs-4.0.189-dist/build/pdf.mjs';
-            async function renderPDF(url, container) {
-                const pdfDoc = await pdfjsLib.getDocument(url).promise;
-                for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
-                    const page = await pdfDoc.getPage(pageNum);
-                    var canvas = document.createElement('canvas');
-                    var context = canvas.getContext('2d');
-                    var viewport = page.getViewport({scale: 1});
-                    canvas.height = viewport.height;
-                    canvas.width = viewport.width;
-                    await page.render({canvasContext: context, viewport: viewport}).promise;
-                    document.getElementById(container).appendChild(canvas);
-                }
-            }
-            document.getElementById('viewPdfBtn1').addEventListener('click', () => {
-                renderPDF('media/BG2/2023_CLS_AUM.pdf', 'pdf-container1');
-            });
-            document.getElementById('viewPdfBtn2').addEventListener('click', () => {
-                renderPDF('media/BG2/2023_Biofab.pdf', 'pdf-container2');
-            });
-        </script>
         <script>
             $(document).ready(function(){
                 $(".BodyToggle").click(function(){
@@ -57,9 +35,22 @@
                 <a id="conferred_presentations">
                     <div style="line-height:normal">
                         <ol>
+                            <li class="biblist">
+                                <b>XF Ding</b>, X Duan, N Li, D Chem, and N Zhu. 
+                                SSSSeg: An Automated 3D Segmentation of Hydrogel Scaffolds Based on PBI-µCT.
+                                <i>2023 CLS Annual User Meeting.</i> 
+                                Saskatoon SK, Canada, October 2023 <u class="BodyToggle fade" data-toggle="Toggle6">(Poster)</u>
+                            </li>
 
                             <button id="viewPdfBtn1"onclick="renderPDF('media/BG2/2023_CLS_AUM.pdf', 'pdf-container')">View PDF</button>
                             <div id="pdf-container1"></div>
+
+                            <li class="biblist">
+                                <b>XF Ding</b>, X Duan, N Li, D Chen, and N Zhu.
+                                Automatic 3D Segmentation of Hydrogel Scaffolds Based on PBI-uCT.
+                                <i>International Conference on Biofabrication 2023.</i> 
+                                Saskatoon SK, Canada, September 2023 <u class="BodyToggle fade" data-toggle="Toggle5">(Talk)</u>
+                            </li>
 
                             <button id="viewPdfBtn2"onclick="renderPDF('media/BG2/2023_Biofab.pdf', 'pdf-container')">View PDF</button>
                             <div id="pdf-container2"></div>
@@ -69,5 +60,27 @@
             	</a>
             </div>
         </div>
+        <script type="module">
+            import pdfjsLib from '/scripts/pdfjs-4.0.189-dist/build/pdf.mjs';
+            async function renderPDF(url, container) {
+                const pdfDoc = await pdfjsLib.getDocument(url).promise;
+                for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
+                    const page = await pdfDoc.getPage(pageNum);
+                    var canvas = document.createElement('canvas');
+                    var context = canvas.getContext('2d');
+                    var viewport = page.getViewport({scale: 1});
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+                    await page.render({canvasContext: context, viewport: viewport}).promise;
+                    document.getElementById(container).appendChild(canvas);
+                }
+            }
+            document.getElementById('viewPdfBtn1').addEventListener('click', () => {
+                renderPDF('media/BG2/2023_CLS_AUM.pdf', 'pdf-container1');
+            });
+            document.getElementById('viewPdfBtn2').addEventListener('click', () => {
+                renderPDF('media/BG2/2023_Biofab.pdf', 'pdf-container2');
+            });
+        </script>
     </body>
 </html>
