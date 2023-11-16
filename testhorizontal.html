@@ -8,6 +8,29 @@
         <!-- jQuery Show/Hide Effect -->
         <script src="scripts/PDFObject-2.2.6/pdfobject.js"></script>
         <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/pdfjs-4.0.189-dist/build/pdf.mjs"></script>
+        <script src="scripts/pdfjs-4.0.189-dist/build/pdf.worker.mjs"></script>
+        <script>
+            function renderPDF(url, container) {
+                pdfjsLib.getDocument(url).promise.then(pdfDoc => {
+                    for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
+                        pdfDoc.getPage(pageNum).then(page => {
+                            var canvas = document.createElement('canvas');
+                            var context = canvas.getContext('2d');
+                            var viewport = page.getViewport({
+                                scale: 1
+                            });
+                            canvas.height = viewport.height;
+                            canvas.width = viewport.width;
+                            page.render({
+                                canvasContext: context, viewport: viewport
+                            });
+                            document.getElementById(container).appendChild(canvas);
+                        });
+                    }
+                });
+            }
+        </script>
         <script>
             $(document).ready(function(){
                 $(".BodyToggle").click(function(){
@@ -27,6 +50,11 @@
                 height:500px;
                 border:10px solid rgba(0,0,0,0); 
             }
+            #pdf-container {
+                width: 100%;
+                overflow-x: scroll;
+                white-space: nowrap;
+            }
         </style>
     </head>
     <body>
@@ -43,12 +71,11 @@
                                 Saskatoon SK, Canada, October 2023 <u class="BodyToggle fade" data-toggle="Toggle6">(Poster)</u>
                             </li>
                             <div class="ToggleMessage fade" id="Toggle6"></div>
-                            <script>PDFObject.embed("media/BG2/2023_CLS_AUM.pdf#toolbar=0", "#Toggle6");</script>
+                            <script>renderPDF('media/BG2/2023_CLS_AUM.pdf','pdf-container','#Toggle6');</script>
+
                             <li class="biblist">
                                 <b>XF Ding</b>, X Duan, N Li, D Chen, and N Zhu.
-                                <a href="https://az659834.vo.msecnd.net/eventsaircancprod/production-venuewest-public/e74e64a9291549d6b857e9b1c6885e6f" target="_blank">
-                                    <u class="ReferenceLink">Automatic 3D Segmentation of Hydrogel Scaffolds Based on PBI-uCT.</u>
-                                </a>
+                                Automatic 3D Segmentation of Hydrogel Scaffolds Based on PBI-uCT.
                                 <i>International Conference on Biofabrication 2023.</i> 
                                 Saskatoon SK, Canada, September 2023 <u class="BodyToggle fade" data-toggle="Toggle5">(Talk)</u>
                             </li>
