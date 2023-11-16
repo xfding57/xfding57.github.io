@@ -7,20 +7,18 @@
         <meta charset="utf-8">
         <!-- jQuery Show/Hide Effect -->
         <script src="scripts/PDFObject-2.2.6/pdfobject.js"></script>
+        <script src="scripts/jquery.min.js"></script>
         <script>
-            $(document).ready(function () {
-                // Function to open all PDF toggles
-                $("#OpenAllToggle").click(function () {
-                    $(".ToggleMessage").show();
-                });
-                // Function to close all PDF toggles
-                $("#CloseAllToggle").click(function () {
-                    $(".ToggleMessage").hide();
-                });
-                // Individual PDF toggle click handler (if needed)
-                $(".BodyToggle").click(function () {
+            $(document).ready(function(){
+                $(".BodyToggle").click(function(){
                     var toggleId = $(this).data("toggle"); // Get the id from data-toggle attribute
-                    $("#" + toggleId).toggle(); // Toggle the corresponding element
+                    var targetElement = $("#" + toggleId);
+
+                    if(targetElement.is(":visible")) {
+                        targetElement.slideUp(); // Slide up if element is visible
+                    } else {
+                        targetElement.slideDown(); // Slide down if element is hidden
+                    }
                 });
             });
         </script>
@@ -219,11 +217,13 @@
                     <h3 class="HeadingLevel2" align="center">
                         <b>Conferred Presentations</b>
                     </h3>
+<!--
                     <p>
                         <u id="OpenAllToggle" class="BodyToggle fade">Open All</u>
                         &emsp;
                         <u id="CloseAllToggle" class="BodyToggle fade">Close All</u>
                     </p>
+-->
                     <div style="line-height:normal">
                         <ol>
                             <li class="biblist">
@@ -291,9 +291,7 @@
                                 Saskatoon SK, Canada, October 2022
                             </li>
                             <li class="biblist">
-                                SZ Danalou, <b>XF Ding</b>, N Zhu, and L Zhang. 
-                                <!-- https://research.ucalgary.ca/sites/default/files/teams/13/22nd%20AB%20BME%20Conference%202021-SHORT.pdf#page=10 -->
-                                <!--https://web.archive.org/web/20221116183329/https://research.ucalgary.ca/sites/default/files/teams/13/22nd%20AB%20BME%20Conference%202021-SHORT.pdf -->
+                                SZ Danalou, <b>XF Ding</b>, N Zhu, and L Zhang.
                                 Using Synchrotron X-ray CT to Study Pharmaceutical Powders Mixing Quality and Granulation.
                                 <i>22nd Annual Alberta Biomedical Engineering Conference.</i> 
                                 Banff AB, Canada, October 2021
@@ -368,6 +366,9 @@
                         <b>Honours, Awards, and Fellowships</b>
                     </h3>
                     <div style="line-height:normal">
+                        <p>
+                            <b>First Prize in Poster Competition</b> at the 2023 CLS Annual Users' Meeting, 2023 (500 CAD)
+                        </p>
                         <p>
                             <b>PhD Devolved Scholarship</b> from the University of Saskatchewan, 2023 (10,500 CAD)
                         </p>
