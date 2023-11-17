@@ -79,6 +79,14 @@ body {
   z-index:2;
   background-color:rgba(255,255,255,0);
 }
+.BodyBoxTest {
+  position:absolute;
+  left:50%;
+  width:900px;
+  transform:translate(-50%,0%);
+  z-index:2;
+  background-color:rgba(255,255,255,0);
+}
 .ContentsBox {
   border:1px outset white;
   background-color:rgba(255,255,255,0.1);
