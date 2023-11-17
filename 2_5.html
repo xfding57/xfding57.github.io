@@ -110,8 +110,20 @@
                     <img class="AffiliationLinks" src="media/Logo_github.svg" style="filter: invert(100%);">
                 </a>
             </p>
+            <!-- Footer -->
+            <div id="footer-placeholder"></div>
             <script>
-                // Modal Window
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "footer.html", true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        document.getElementById("footer-placeholder").innerHTML = xhr.responseText;
+                    }
+                };
+                xhr.send();
+            </script>
+            <!-- Modal Window -->
+            <script>
                 modal = document.getElementById('myModal');
                 var btn = document.getElementById("myBtn");
                 var span = document.getElementsByClassName("modal_close")[0];
@@ -123,20 +135,10 @@
                 }
                 // When the user clicks anywhere outside of the modal, close it
                 window.onclick = function(event) {
-                    if (event.target == modal) {modal.style.display = "none";}
-                }
-            </script>
-            <!-- Include the footer using JavaScript -->
-            <div id="footer-placeholder"></div>
-            <script>
-                var xhr = new XMLHttpRequest();
-                xhr.open("GET", "footer.html", true);
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState === 4 && xhr.status === 200) {
-                        document.getElementById("footer-placeholder").innerHTML = xhr.responseText;
+                    if (event.target == modal) {
+                        modal.style.display = "none";
                     }
-                };
-                xhr.send();
+                }
             </script>
         </div>
     </body>
