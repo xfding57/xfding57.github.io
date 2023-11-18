@@ -18,7 +18,7 @@ body {
   top:0%; 
   left:0%;
   right:0%;
-  height:45%; /* Thus BodyBox is 55% top */
+  height:45%; /* Thus BodyBox is 45% top */
   opacity:0.8;
   background-repeat:no-repeat;
   background-size:cover;
@@ -37,12 +37,12 @@ body {
   z-index:2;
 }
 .LinkBox {
-  font-size:20px;
+  font-size:22px;
   position:absolute;
   border:1.5px solid rgba(222,222,222,0);
   background-color:rgba(0,0,0,0);
   transform:translate(0,-50%);
-  top:40%;
+  top:35%;
   left:0;
   right:0;
   padding:10px;
