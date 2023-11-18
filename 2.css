@@ -117,6 +117,7 @@ body {
   position:absolute;
   left:0%;
   right:0%;
+  bottom:0;
   height:auto;
   padding-top:100px;
   padding-bottom:0px;
