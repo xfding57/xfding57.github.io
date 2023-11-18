@@ -30,27 +30,27 @@ body {
   background-color:rgba(0,0,0,0.5);
   transform:translate(-50%,-50%);
   width:60%;
-  top:22.5%;
+  top:20%;
   left:50%;
   padding:10px;
   text-align:center;
   z-index:2;
 }
 .LinkBox {
-  font-size:25px;
+  font-size:20px;
   position:absolute;
   border:1.5px solid rgba(222,222,222,0);
   background-color:rgba(0,0,0,0);
   transform:translate(0,-50%);
-  top:45%;
+  top:40%;
   left:0;
   right:0;
   padding:10px;
   text-align:center;
   z-index:2;
+  /*
   border:1.5px solid rgba(222,222,222,1);
   background-color:rgba(0,0,0,0.5);
-  /*
   width:80%;
   left:50%;
   */
