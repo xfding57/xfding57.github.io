@@ -113,19 +113,19 @@
                 <span class="dot" style="display:none"></span>
                 <span class="dot" style="display:none"></span>
             </div>
+            <!-- Footer -->
+            <div id="footer-placeholder"></div>
+            <script>
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "footer.html", true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        document.getElementById("footer-placeholder").innerHTML = xhr.responseText;
+                    }
+                };
+                xhr.send();
+            </script>
         </div>
-        <!-- Footer -->
-        <div id="footer-placeholder"></div>
-        <script>
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "footer.html", true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById("footer-placeholder").innerHTML = xhr.responseText;
-                }
-            };
-            xhr.send();
-        </script>
         <script>
             var slideIndex = 0;
             showSlides();
