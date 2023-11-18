@@ -18,7 +18,7 @@ body {
   top:0%; 
   left:0%;
   right:0%;
-  height:55%;
+  height:55%; /* Thus BodyBox is 55% top */
   opacity:0.8;
   background-repeat:no-repeat;
   background-size:cover;
@@ -48,9 +48,9 @@ body {
   padding:10px;
   text-align:center;
   z-index:2;
-  /*
   border:1.5px solid rgba(222,222,222,1);
   background-color:rgba(0,0,0,0.5);
+  /*
   width:80%;
   left:50%;
   */
