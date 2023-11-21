@@ -1,10 +1,18 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
 <html>
     <head>
-        <link rel="stylesheet" href="2.css">
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <title>Xiao Fan Ding, M.Sc.</title>
-        <meta charset="utf-8"> 
+        <!-- Header -->
+        <div id="header-placeholder"></div>
+        <script>
+            var xhrheader = new XMLHttpRequest();
+            xhrheader.open("GET", "header.html", true);
+            xhrheader.onreadystatechange = function () {
+                if (xhrheader.readyState === 4 && xhrheader.status === 200) {
+                    document.getElementById("header-placeholder").innerHTML = xhrheader.responseText;
+                }
+            };
+            xhrheader.send();
+        </script>
         <style type="text/css">
             .BlurBG {
                 background-image:url('media/Header_FFS_let_it_in_desktop.jpg')
@@ -24,10 +32,6 @@
                 <i class="FigureCaption">Photographer: Fifty Foot Shadows</i>
             </div>
         </a>
-        <div class="TextBox">
-            <h1>Xiao Fan Ding</h1>
-            <p>BSc&emsp;MSc</p>
-        </div>
         <!-- Link Box -->
         <div id="linkbox-placeholder"></div>
         <script>
