@@ -1,0 +1,16 @@
+# for linkbox.html
+200.html
+210.html
+220.html
+230.html
+240.html
+250.html
+260.html
+#
+# inside 250.html
+251.html
+252.html
+253.html
+254.html
+255.html
+256.html
