@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+    <head>
+        <link rel="stylesheet" href="2.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <title>Xiao Fan Ding, M.Sc.</title>
+        <meta charset="utf-8"> 
+        <style type="text/css">
+            .BlurBG {
+                background-image:url('media/Header_FFS_everorange_desktop.jpg')
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="BlurBG"></div>
+        <a href="https://fiftyfootshadows.net/" target="_blank">
+            <div class="FigureCaptionBox">
+                <i class="FigureCaption">Photographer: Fifty Foot Shadows</i>
+            </div>
+        </a>
+        <!-- Link Box -->
+        <div id="linkbox-placeholder"></div>
+        <script>
+            var xhrlinkbox = new XMLHttpRequest();
+            xhrlinkbox.open("GET", "linkbox.html", true);
+            xhrlinkbox.onreadystatechange = function () {
+                if (xhrlinkbox.readyState === 4 && xhrlinkbox.status === 200) {
+                    document.getElementById("linkbox-placeholder").innerHTML = xhrlinkbox.responseText;
+                }
+            };
+            xhrlinkbox.send();
+        </script>
+        <!-- Body -->
+        <div class="BodyBox">
+            <h2 class="HeadingLevel1">2024</h2>
+            <a id="240112">
+                <p class="HeadingLevel2">
+                    <b>Beamtime</b>
+                    <br>
+                    <i class="FigureCaption">2024/01/12</i>
+                </p>
+            </a>
+            <!-- Footer -->
+            <div id="footer-placeholder"></div>
+            <script>
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "footer.html", true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        document.getElementById("footer-placeholder").innerHTML = xhr.responseText;
+                    }
+                };
+                xhr.send();
+            </script>
+        </div>
+        <script>
+            // Function to initialize a slideshow
+            function initializeSlideshow(slideshow) {
+                slideshow.currentSlideIndex = 1;
+                showSlides(slideshow.currentSlideIndex, slideshow);
+                // Setting up correct onclick event for each dot
+                var dots = slideshow.getElementsByClassName("dot");
+                for(var i = 0; i < dots.length; i++) {
+                    let slideNumber = i + 1;
+                    dots[i].onclick = function() { 
+                        currentSlide(slideNumber, slideshow); 
+                    };
+                }
+            }
+            // Get all the slideshows and initialize them
+            var slideshows = document.getElementsByClassName("slideshow-container");
+            for(var i = 0; i < slideshows.length; i++) {
+                initializeSlideshow(slideshows[i]);
+            }
+            function plusSlides(n, slideshow) {
+                showSlides(slideshow.currentSlideIndex += n, slideshow);
+            }
+            function currentSlide(n, slideshow) {
+                showSlides(slideshow.currentSlideIndex = n, slideshow);
+            }
+            function showSlides(n, slideshow) {
+                var i;
+                var slides = slideshow.getElementsByClassName("slideshow");
+                var dots = slideshow.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideshow.currentSlideIndex = 1
+                }
+                if (n < 1) {
+                    slideshow.currentSlideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideshow.currentSlideIndex - 1].style.display = "block";
+                dots[slideshow.currentSlideIndex - 1].className += " active";
+            }
+        </script>
+    </body>
+</html>
