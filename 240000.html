@@ -131,10 +131,11 @@
                             The main imaging technique I use at the Canadian Light Source is propagation-based imaging (PBI) which is also called in-line phase contrast imaging. This is the simplest method of capturing the phase shift of X-rays as they pass through a sample. This combined with computed microtomography becomes PBI-&mu;CT. The samples that I look at are hydrogel scaffolds.
                         </p>
                         <p align="justify">
-                            Below, the concept of PBI-&mu;CT is illustrated. There is some attenuation, but hydrogel scaffolds are very low-density, so the attenuation is not noticeable. However, the phase shift is noticeable and more importantly, the thickness of the material where the phase shift occurred can be calculated.
+                            Below, the concept of PBI-&mu;CT is illustrated. The X-ray from the synchrotron is highly coherent. While there is very weak X-ray absorption contrast when imaging hydrogel scaffolds, the phase shift from the coherent X-rays is noticeable and the thickness of the material where the phase shift occurred can be calculated using a phase retrieval algorithm e.g., TIE-Hom.
                         </p>
                         <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/edgeview_schematic.jpg">
                         <p align="justify">
+                            So this project aimed towards integrating two ways of processing PBI-&mu;CT images. The first is called edge enhanced contrast (EEC) and the second is phase retrieval (PR). EEC is great for delineating boundaries while PR is great for area. They both have their detriments. EEC is noisy and PR is a low-pass filter, boundaries are often over-smoothed, and TIE-Hom is most effective for a single homogeneous material. 
                         </p>
                         <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/edgeview_setup.jpg">
                         <p align="justify">
