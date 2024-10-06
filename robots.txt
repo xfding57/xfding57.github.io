@@ -1,6 +1,3 @@
 User-agent: Googlebot
-Allow: /media/BG2/abstracts/
 Disallow: /
-
-User-agent: *
-Disallow: /
+Allow: /media/BG2/scholar/
