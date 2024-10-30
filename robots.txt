@@ -1,4 +1,4 @@
 User-agent: Googlebot
-Disallow: /
+User-agent: Google Scholar
 Allow: /media/BG2/scholar/
-Allow: /media/BG2/abstracts/
+Disallow: /
