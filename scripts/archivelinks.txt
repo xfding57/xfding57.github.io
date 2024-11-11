@@ -4,7 +4,6 @@
 # https://xmrlabs.com/
 # https://publish.uwo.ca/~xding57
 # https://publish.uwo.ca/~cbrow247
-# https://publish.uwo.ca/~xding57
 # https://publish.uwo.ca/~elessar
 # 
 # MRIdt
@@ -37,13 +36,16 @@ https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire_newslette
 https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire-newsletter-may-2024.pdf
 #
 # Conference Abstracts
-https://www.imno.ca/sites/default/files/ImNO2019Proceedings.pdf
+# https://www.imno.ca/sites/default/files/ImNO2019Proceedings.pdf
+https://www.igtximno.ca/wp-content/uploads/2024/09/ImNO2020Proceedings.pdf
 https://cds.ismrm.org/protected/19MProceedings/PDFfiles/1441.html
-https://www.imno.ca/sites/default/files/ImNO2020Proceedings.pdf
-https://www.imno.ca/sites/default/files/ImNO2020Proceedings.pdf
+# https://www.imno.ca/sites/default/files/ImNO2020Proceedings.pdf
+https://www.igtximno.ca/wp-content/uploads/2024/09/ImNO2020Proceedings.pdf
 https://cds.ismrm.org/protected/20MProceedings/PDFfiles/4214.html
 https://cds.ismrm.org/protected/20MProceedings/PDFfiles/4186.html
-https://www.imno.ca/sites/default/files/ImNO2021Proceedings-final.pdf
+# https://www.imno.ca/sites/default/files/ImNO2021Proceedings-final.pdf
+https://www.igtximno.ca/wp-content/uploads/2024/09/ImNO2021Proceedings.pdf
+https://schulich.ucalgary.ca/sites/default/files/teams/1/22nd%20AB%20BME%20Conference%202021%20-%20LONG.pdf
 https://www.xcdsystem.com/cic/program/5iXyWiQ/index.cfm?pgid=2778&sid=25672&abid=95190
 https://iadr.abstractarchives.com/abstract/52am-3816292/dentinal-microcracks-and-endodontics-a-longitudinal-study-using-synchrotron-computed-tomography
 https://az659834.vo.msecnd.net/eventsaircancprod/production-venuewest-public/e74e64a9291549d6b857e9b1c6885e6f
@@ -61,5 +63,5 @@ https://artsandscience.usask.ca/synchrotron-sciences/faculty.php
 # https://www.northstarats.com/Canadian-Light-Source/Associate-Scientist-Brockhouse-Beamlines/79786
 # https://lightsources.org/job/associate-scientist-sxrmb-beamline/
 # https://www.northstarats.com/Canadian-Light-Source/Associate-Scientist-SXRMB-Beamline/79933
-https://lightsources.org/job/associate-scientist-mid-ir-beamline/
-https://www.northstarats.com/Canadian-Light-Source/Associate-Scientist-Mid-IR-Beamline/80376
+# https://lightsources.org/job/associate-scientist-mid-ir-beamline/
+# https://www.northstarats.com/Canadian-Light-Source/Associate-Scientist-Mid-IR-Beamline/80376
