@@ -2,21 +2,20 @@
 https://docs.google.com/document/d/10lDJ38fYNiv22JZKmGDHpri_PUqEWISLnUgpm2lt6Qo/edit
 https://www.torontomu.ca/science/current-undergraduate-students/deans-list/#!accordion-1610636196021-2016-2017
 #
-# 2017 Ryerson Fall Convocation
+# 2017 Ryerson Spring Convocation
 https://www.torontomu.ca/content/dam/convocation/program/FOS_Spring_2017.pdf
 #
-# 2017-2019 xMR
+# 2017-2019 xMR Websites
 # https://xmr.physics.uwo.ca/
+# https://xmrlabs.com/
 #
 # 2017-2018 UWO Physics and Astronomy
 # http://www.physics.uwo.ca/people/graduate_students.html
 https://www.physics.uwo.ca/people/graduate_students/index.html
+https://physics.uwo.ca/news_events/archive/2018_2019/atrium_abuzz_for_fall_preview_day_.html
 #
-# 2018-2019 UWO Physics and Astronomy
+# 2018-2019 UWO Medical Biophysics
 https://www.schulich.uwo.ca/biophysics/people/grad_students.html
-#
-# 2019 xMR
-# https://xmrlabs.com/
 #
 # 2019 personal website
 # https://publish.uwo.ca/~xding57
@@ -32,6 +31,7 @@ https://mridt.com/iso-17025/
 https://mridt.com/blog/
 https://mridt.com/contact/
 https://mridt.com/category/mri-service/
+# MRIdt blogposts
 https://mridt.com/2023/09/26/why-is-astm-f2503-23-important/
 https://mridt.com/2023/11/14/importance-of-astm-f2119-07/
 https://mridt.com/2023/12/28/importance-of-astm-f2182-19/
@@ -49,6 +49,8 @@ https://mridt.com/2024/11/11/behind-the-scenes-at-mridt/
 # 2019 Conferences
 https://www.imno.ca/sites/default/files/ImNO2019Proceedings.pdf
 https://cds.ismrm.org/protected/19MProceedings/PDFfiles/1441.html
+#
+# 2019 Western Fall Convocation
 #
 # 2020 Erica
 https://www.oise.utoronto.ca/depelab/members/
@@ -98,6 +100,7 @@ https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire-call-for-
 https://artsandscience.usask.ca/synchrotron-sciences/documents/uregina-wetlands_msc-position_mcbeth2.pdf
 https://artsandscience.usask.ca/synchrotron-sciences/documents/gmob_msc-position_mcbeth_2023-02.pdf
 https://artsandscience.usask.ca/synchrotron-sciences/news.php
+# INSPIRE Newsletters
 https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire_newsletter_oct23-small.pdf
 https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire-newsletter-may-2024.pdf
 #
@@ -109,5 +112,5 @@ https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire-newslette
 # https://lightsources.org/job/associate-scientist-mid-ir-beamline/
 # https://www.northstarats.com/Canadian-Light-Source/Associate-Scientist-Mid-IR-Beamline/80376
 #
-# 2024 U of S Summer Convocation
+# 2024 U of S Spring Convocation
 https://students.usask.ca/documents/convocation/spring-2024.pdf
