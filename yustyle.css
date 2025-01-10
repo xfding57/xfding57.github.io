@@ -16,7 +16,7 @@ body {
   top:0%; 
   left:0%;
   right:0%;
-  height:45%; /* Thus BodyBox is 45% top */
+  height:20%; /* Thus BodyBox is 20% top */
   opacity:0.8;
   background-repeat:no-repeat;
   background-size:cover;
@@ -70,7 +70,7 @@ body {
 
 .BodyBox {
   position:absolute;
-  top:45%;
+  top:20%;
   left:50%;
   width:900px;
   transform:translate(-50%,0%);
