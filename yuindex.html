@@ -28,29 +28,32 @@
         <!-- Body -->
         <div class="BodyBox">
             <h2 class="HeadingLevel1">Home</h2>
+            <h3 class="HeadingLevel2" align="center">Intro</h3>
             <p align="justify">
                 Intro
             </p>
-            <h2 class="HeadingLevel1">Photos</h2>
+            <h3 class="HeadingLevel2" align="center">Photos</h3>
             <p align="justify">
                 Photos
             </p>
-            <h2 class="HeadingLevel1">Price List</h2>
+            <h3 class="HeadingLevel2" align="center">Price List</h3>
             <p align="justify">
                 Price List
             </p>
-            <!-- Footer -->
-            <div id="footer-placeholder"></div>
-            <script>
-                var xhr = new XMLHttpRequest();
-                xhr.open("GET", "yufooter.html", true);
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState === 4 && xhr.status === 200) {
-                        document.getElementById("footer-placeholder").innerHTML = xhr.responseText;
-                    }
-                };
-                xhr.send();
-            </script>
         </div>
     </body>
+    <footer>
+        <!-- Footer -->
+        <div id="footer-placeholder"></div>
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "yufooter.html", true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("footer-placeholder").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        </script>
+    </footer>
 </html>
