@@ -106,6 +106,18 @@
             <p align="justify">
                 Price List
             </p>
+            <!-- Footer -->
+            <div id="footer-placeholder"></div>
+            <script>
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "yufooter.html", true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        document.getElementById("footer-placeholder").innerHTML = xhr.responseText;
+                    }
+                };
+                xhr.send();
+            </script>
         </div>
         <script>
             var slideIndex = 0;
