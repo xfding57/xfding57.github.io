@@ -17,7 +17,7 @@
         <div id="linkbox-placeholder"></div>
         <script>
             var xhrlinkbox = new XMLHttpRequest();
-            xhrlinkbox.open("GET", "linkbox.html", true);
+            xhrlinkbox.open("GET", "yulinkbox.html", true);
             xhrlinkbox.onreadystatechange = function () {
                 if (xhrlinkbox.readyState === 4 && xhrlinkbox.status === 200) {
                     document.getElementById("linkbox-placeholder").innerHTML = xhrlinkbox.responseText;
