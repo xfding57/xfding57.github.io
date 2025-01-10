@@ -8,6 +8,16 @@
             .BlurBG {
                 background-image:url('media/Header_FFS_quiet_spring_desktop.jpg')
             }
+            /* Add this to your CSS */
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh; /* Ensures the body stretches to the full height of the viewport */
+                margin: 0; /* Remove default margin to prevent scrollbars */
+            }
+            .content {
+                flex: 1; /* Fills the space between header and footer */
+            }
         </style>
     </head>
     <body>
@@ -41,19 +51,19 @@
                 Price List
             </p>
         </div>
+        <footer>
+            <!-- Footer -->
+            <div id="footer-placeholder"></div>
+            <script>
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "yufooter.html", true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        document.getElementById("footer-placeholder").innerHTML = xhr.responseText;
+                    }
+                };
+                xhr.send();
+            </script>
+        </footer>
     </body>
-    <footer>
-        <!-- Footer -->
-        <div id="footer-placeholder"></div>
-        <script>
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "yufooter.html", true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById("footer-placeholder").innerHTML = xhr.responseText;
-                }
-            };
-            xhr.send();
-        </script>
-    </footer>
 </html>
