@@ -32,76 +32,9 @@
                 Intro
             </p>
             <h2 class="HeadingLevel1">Photos</h2>
-            <div class="slideshow-container">
-                <div class="slideshow fade-auto" style="position:relative">
-                    <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1">
-                        <span class="usaskspan2">2024/05 Group Dinner</span></span></h2>
-                    </div>
-                    <img class="slideshow-img" src="media/BG0_2405-2.jpg">
-                </div>
-                <div class="slideshow fade-auto" style="position:relative">
-                    <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1">
-                        <span class="usaskspan2">2025/05 Group Photo</span></span></h2>
-                    </div>
-                    <img class="slideshow-img" src="media/BG0_2405-3.jpg">
-                </div>
-                <div class="slideshow fade-auto" style="position:relative">
-                    <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1">
-                        <span class="usaskspan2">2024/02 Beamtime</span></span></h2>
-                    </div>
-                    <img class="slideshow-img" src="media/BG0_2402.jpg">
-                </div>
-                <div class="slideshow fade-auto" style="position:relative">
-                    <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1">
-                        <span class="usaskspan2">2024/01 Beamtime</span></span></h2>
-                    </div>
-                    <img class="slideshow-img" src="media/BG0_2401.jpg">
-                </div>
-                <div class="slideshow fade-auto" style="position:relative">
-                    <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1">
-                        <span class="usaskspan2">2023/12 INSPIRE Workshop</span></span></h2>
-                    </div>
-                    <img class="slideshow-img" src="media/BG0_2312.jpg">
-                </div>
-                <div class="slideshow fade-auto" style="position:relative">
-                    <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1">
-                        <span class="usaskspan2">2023/10 CLS Annual Users' Meeting</span></span></h2>
-                    </div>
-                    <img class="slideshow-img" src="media/BG0_2310.jpg">
-                </div>
-                <div class="slideshow fade-auto" style="position:relative">
-                    <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1">
-                        <span class="usaskspan2">2023/09 Biofabrication Conference</span></span></h2>
-                    </div>
-                    <img class="slideshow-img" src="media/BG0_2309-2.jpg">
-                </div>
-                <div class="slideshow fade-auto" style="position:relative">
-                    <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1">
-                        <span class="usaskspan2">2023/09 Biofabrication Conference</span></span></h2>
-                    </div>
-                    <img class="slideshow-img" src="media/BG0_2309-1.jpg">
-                </div>
-                <div class="slideshow fade-auto" style="position:relative">
-                    <div class="textoverslidesdiv"><h2 class="textoverslidestext"><span class="usaskspan1">
-                        <span class="usaskspan2">2023/09 Group Photo</span></span></h2>
-                    </div>
-                    <img class="slideshow-img" src="media/BG0_2309.jpg">
-                </div>
-            </div>
-            <!-- Need this for slideshow to work -->
-            <div style="text-align:center">
-                <!-- Number of dots need to match number of slides -->
-                <!-- The style needs to be style="display:none for slideshow to work -->
-                <span class="dot" style="display:none"></span>
-                <span class="dot" style="display:none"></span>
-                <span class="dot" style="display:none"></span>
-                <span class="dot" style="display:none"></span>
-                <span class="dot" style="display:none"></span>
-                <span class="dot" style="display:none"></span>
-                <span class="dot" style="display:none"></span>
-                <span class="dot" style="display:none"></span>
-                <span class="dot" style="display:none"></span>
-            </div>
+            <p align="justify">
+                Photos
+            </p>
             <h2 class="HeadingLevel1">Price List</h2>
             <p align="justify">
                 Price List
@@ -119,27 +52,5 @@
                 xhr.send();
             </script>
         </div>
-        <script>
-            var slideIndex = 0;
-            showSlides();
-            function showSlides() {
-                var i;
-                var slides = document.getElementsByClassName("slideshow");
-                var dots = document.getElementsByClassName("dot");
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {
-                    slideIndex = 1
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "block";  
-                dots[slideIndex-1].className += " active";
-                setTimeout(showSlides, 5000); // Change image time in milliseconds
-            }
-        </script>
     </body>
 </html>

@@ -75,7 +75,7 @@ body {
   width:900px;
   transform:translate(-50%,0%);
   z-index:2;
-  background-color:rgba(166,160,255,1);
+  background-color:rgba(0,0,0,0);
 }
 .BodyBoxTest {
   position:absolute;
