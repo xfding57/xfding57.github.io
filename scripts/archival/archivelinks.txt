@@ -1,4 +1,5 @@
 # 2015-2017 Ryerson Deans List
+https://www.torontomu.ca/science/current-undergraduate-students/deans-list
 https://docs.google.com/document/d/10lDJ38fYNiv22JZKmGDHpri_PUqEWISLnUgpm2lt6Qo/edit
 https://www.torontomu.ca/science/current-undergraduate-students/deans-list/#!accordion-1610636196021-2016-2017
 #
@@ -31,6 +32,7 @@ https://mridt.com/iso-17025/
 https://mridt.com/blog/
 https://mridt.com/contact/
 https://mridt.com/category/mri-service/
+#
 # MRIdt blogposts
 https://mridt.com/2023/09/26/why-is-astm-f2503-23-important/
 https://mridt.com/2023/11/14/importance-of-astm-f2119-07/
@@ -68,22 +70,23 @@ https://www.imno.ca/sites/default/files/ImNO2020Proceedings.pdf
 https://cds.ismrm.org/protected/20MProceedings/PDFfiles/4214.html
 https://cds.ismrm.org/protected/20MProceedings/PDFfiles/4186.html
 #
-# 2021 Conferences
+# 2021 Imaging Network Ontario Conference
 https://www.imno.ca/sites/default/files/ImNO2021Proceedings-final.pdf
-https://schulich.ucalgary.ca/sites/default/files/teams/1/22nd%20AB%20BME%20Conference%202021%20-%20LONG.pdf
 #
-# 2022 Conferences
+# 2021 Alberta Biomedical Engineering Conference
+# https://schulich.ucalgary.ca/sites/default/files/teams/1/22nd%20AB%20BME%20Conference%202021%20-%20LONG.pdf
+#
+# 2022 Canadian Chemical Enigneering Conference Conference
 https://www.xcdsystem.com/cic/program/5iXyWiQ/index.cfm?pgid=2778&sid=25672&abid=95190
 #
-# 2022 Award
+# 2022 Canadian Chemical Enigneering Conference Poster Award
 https://www.cheminst.ca/conference/canadian-chemical-engineering-conference-2022/students-2/graduate-student-poster-competition-winners/
-https://artsandscience.usask.ca/synchrotron-sciences/faculty.php
 #
 # 2023 Conferences
-https://iadr.abstractarchives.com/abstract/52am-3816292/dentinal-microcracks-and-endodontics-a-longitudinal-study-using-synchrotron-computed-tomography
-https://az659834.vo.msecnd.net/eventsaircancprod/production-venuewest-public/e74e64a9291549d6b857e9b1c6885e6f
-https://az659834.vo.msecnd.net/eventsaircancprod/production-venuewest-public/8ffca94ad4dd4556a3c1d2c950afe9f5
-https://az659834.vo.msecnd.net/eventsaircancprod/production-venuewest-public/70ef0e6199ab45e3952d795777fac81f
+# https://iadr.abstractarchives.com/abstract/52am-3816292/dentinal-microcracks-and-endodontics-a-longitudinal-study-using-synchrotron-computed-tomography
+# https://az659834.vo.msecnd.net/eventsaircancprod/production-venuewest-public/e74e64a9291549d6b857e9b1c6885e6f
+# https://az659834.vo.msecnd.net/eventsaircancprod/production-venuewest-public/8ffca94ad4dd4556a3c1d2c950afe9f5
+# https://az659834.vo.msecnd.net/eventsaircancprod/production-venuewest-public/70ef0e6199ab45e3952d795777fac81f
 #
 # 2023-2025 INSPIRE
 https://artsandscience.usask.ca/synchrotron-sciences
@@ -100,6 +103,7 @@ https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire-call-for-
 https://artsandscience.usask.ca/synchrotron-sciences/documents/uregina-wetlands_msc-position_mcbeth2.pdf
 https://artsandscience.usask.ca/synchrotron-sciences/documents/gmob_msc-position_mcbeth_2023-02.pdf
 https://artsandscience.usask.ca/synchrotron-sciences/news.php
+#
 # INSPIRE Newsletters
 https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire_newsletter_oct23-small.pdf
 https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire-newsletter-may-2024.pdf
@@ -111,6 +115,11 @@ https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire-newslette
 # https://www.northstarats.com/Canadian-Light-Source/Associate-Scientist-SXRMB-Beamline/79933
 # https://lightsources.org/job/associate-scientist-mid-ir-beamline/
 # https://www.northstarats.com/Canadian-Light-Source/Associate-Scientist-Mid-IR-Beamline/80376
+# https://www.northstarats.com/Canadian-Light-Source/Scientist-or-Senior-Scientist-for-BMIT-X-ray-microCT-Beamlines/86224
 #
 # 2024 U of S Spring Convocation
 https://students.usask.ca/documents/convocation/spring-2024.pdf
+#
+# 2025 Images of Research Competition
+http://wshe.es/1X0gTt2A
+https://usask.wishpondpages.com/usask-research-in-action-2025/entries/206827212
