@@ -64,31 +64,36 @@ https://medium.com/jcacs-musings/wide-awakeness-manifesting-from-workplace-conve
 https://medium.com/jcacs-musings/adjusting-to-new-norms-and-unlearning-them-at-the-same-time-managing-our-expectations-and-finding-c61451d6e03b
 https://medium.com/jcacs-musings/creating-new-meaningless-societal-norms-showing-compassion-by-saying-thank-you-even-when-you-do-7773a638ed98
 #
-# 2020 Conferences
+# 2020-2025 Conferences
+## 2020 ImNO
 https://www.imno.ca/sites/default/files/ImNO2020Proceedings.pdf
 https://www.imno.ca/sites/default/files/ImNO2020Proceedings.pdf
+## 2020 ISMRM
 https://cds.ismrm.org/protected/20MProceedings/PDFfiles/4214.html
 https://cds.ismrm.org/protected/20MProceedings/PDFfiles/4186.html
-#
-# 2021 Imaging Network Ontario Conference
+## 2021 ImNO
 https://www.imno.ca/sites/default/files/ImNO2021Proceedings-final.pdf
-#
-# 2021 Alberta Biomedical Engineering Conference
-# https://schulich.ucalgary.ca/sites/default/files/teams/1/22nd%20AB%20BME%20Conference%202021%20-%20LONG.pdf
-#
-# 2022 Canadian Chemical Enigneering Conference Conference
+## 2021 ABBME
+https://schulich.ucalgary.ca/sites/default/files/teams/1/22nd%20AB%20BME%20Conference%202021%20-%20LONG.pdf
+## 2022 CCEC
 https://www.xcdsystem.com/cic/program/5iXyWiQ/index.cfm?pgid=2778&sid=25672&abid=95190
-#
-# 2022 Canadian Chemical Enigneering Conference Poster Award
+## 2022 CCEC Poster Award
 https://www.cheminst.ca/conference/canadian-chemical-engineering-conference-2022/students-2/graduate-student-poster-competition-winners/
-#
-# 2023 Conferences
-# https://iadr.abstractarchives.com/abstract/52am-3816292/dentinal-microcracks-and-endodontics-a-longitudinal-study-using-synchrotron-computed-tomography
+## 2023 IADR
+https://iadr.abstractarchives.com/abstract/52am-3816292/dentinal-microcracks-and-endodontics-a-longitudinal-study-using-synchrotron-computed-tomography
+## 2023 Biofabrication
 # https://az659834.vo.msecnd.net/eventsaircancprod/production-venuewest-public/e74e64a9291549d6b857e9b1c6885e6f
 # https://az659834.vo.msecnd.net/eventsaircancprod/production-venuewest-public/8ffca94ad4dd4556a3c1d2c950afe9f5
 # https://az659834.vo.msecnd.net/eventsaircancprod/production-venuewest-public/70ef0e6199ab45e3952d795777fac81f
+## 2025 CMBEC
+https://proceedings.cmbes.ca/index.php/proceedings/article/view/1223
+https://proceedings.cmbes.ca/index.php/proceedings/article/view/1223/1075
+## 2025 PALSA
+https://event.fourwaves.com/palsa-2025/abstracts/f596ef59-b60f-41c9-ba3a-0cc91b1818d8
+https://event.fourwaves.com/palsa-2025/abstracts/38886d70-34f8-4750-98ae-d465b819c511
 #
 # 2023-2025 INSPIRE
+## INSPIRE Websute
 https://artsandscience.usask.ca/synchrotron-sciences
 https://artsandscience.usask.ca/synchrotron-sciences/about.php
 https://artsandscience.usask.ca/synchrotron-sciences/training-program/graduate-students.php
@@ -103,8 +108,7 @@ https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire-call-for-
 https://artsandscience.usask.ca/synchrotron-sciences/documents/uregina-wetlands_msc-position_mcbeth2.pdf
 https://artsandscience.usask.ca/synchrotron-sciences/documents/gmob_msc-position_mcbeth_2023-02.pdf
 https://artsandscience.usask.ca/synchrotron-sciences/news.php
-#
-# INSPIRE Newsletters
+## INSPIRE Newsletters
 https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire_newsletter_oct23-small.pdf
 https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire-newsletter-may-2024.pdf
 #
