@@ -1,29 +1,33 @@
-# 2015-2017 Ryerson Deans List
+# 2015-2017 Ryerson
+## 2015-2017 Deans's List
 https://www.torontomu.ca/science/current-undergraduate-students/deans-list
-https://docs.google.com/document/d/10lDJ38fYNiv22JZKmGDHpri_PUqEWISLnUgpm2lt6Qo/edit
 https://www.torontomu.ca/science/current-undergraduate-students/deans-list/#!accordion-1610636196021-2016-2017
+# https://docs.google.com/document/d/10lDJ38fYNiv22JZKmGDHpri_PUqEWISLnUgpm2lt6Qo/edit
+https://www.torontomu.ca/content/dam/science/Images/PDF/Dean's%20List%202015-2016.pdf
 #
-# 2017 Ryerson Spring Convocation
+## 2017 Ryerson Spring Convocation
 https://www.torontomu.ca/content/dam/convocation/program/FOS_Spring_2017.pdf
 #
-# 2017-2019 xMR Websites
+#
+# 2017-2019 Western
+## 2017-2019 xMR Websites
 # https://xmr.physics.uwo.ca/
 # https://xmrlabs.com/
 #
-# 2017-2018 UWO Physics and Astronomy
+## 2017-2018 UWO Physics and Astronomy
 # http://www.physics.uwo.ca/people/graduate_students.html
 https://www.physics.uwo.ca/people/graduate_students/index.html
 https://physics.uwo.ca/news_events/archive/2018_2019/atrium_abuzz_for_fall_preview_day_.html
 #
-# 2018-2019 UWO Medical Biophysics
+## 2018-2019 UWO Medical Biophysics
 https://www.schulich.uwo.ca/biophysics/people/grad_students.html
 #
-# 2019 personal website
+## 2019 personal website
 # https://publish.uwo.ca/~xding57
 # https://publish.uwo.ca/~cbrow247
 # https://publish.uwo.ca/~elessar
 #
-# 2019 MRIdt
+## 2019 MRIdt
 https://mridt.com/
 https://mridt.com/about/
 https://mridt.com/services/
@@ -32,7 +36,6 @@ https://mridt.com/iso-17025/
 https://mridt.com/blog/
 https://mridt.com/contact/
 https://mridt.com/category/mri-service/
-#
 # MRIdt blogposts
 https://mridt.com/2023/09/26/why-is-astm-f2503-23-important/
 https://mridt.com/2023/11/14/importance-of-astm-f2119-07/
@@ -54,7 +57,9 @@ https://cds.ismrm.org/protected/19MProceedings/PDFfiles/1441.html
 #
 # 2019 Western Fall Convocation
 #
-# 2020 Erica
+#
+# 2020 Covid Year
+## 2020 Erica
 https://www.oise.utoronto.ca/depelab/members/
 https://canadianscholars.ca/book/leadership-for-flourishing-in-educational-contexts/
 https://www.erudit.org/en/journals/ijtdc/2022-v10-n1-2-ijtdc08046/1099962ar.pdf
@@ -64,7 +69,9 @@ https://medium.com/jcacs-musings/wide-awakeness-manifesting-from-workplace-conve
 https://medium.com/jcacs-musings/adjusting-to-new-norms-and-unlearning-them-at-the-same-time-managing-our-expectations-and-finding-c61451d6e03b
 https://medium.com/jcacs-musings/creating-new-meaningless-societal-norms-showing-compassion-by-saying-thank-you-even-when-you-do-7773a638ed98
 #
-# 2020-2025 Conferences
+#
+# 2020-2025 Saskatchewan
+## 2020-2025 Conferences
 ## 2020 ImNO
 https://www.imno.ca/sites/default/files/ImNO2020Proceedings.pdf
 https://www.imno.ca/sites/default/files/ImNO2020Proceedings.pdf
@@ -92,7 +99,7 @@ https://proceedings.cmbes.ca/index.php/proceedings/article/view/1223/1075
 https://event.fourwaves.com/palsa-2025/abstracts/f596ef59-b60f-41c9-ba3a-0cc91b1818d8
 https://event.fourwaves.com/palsa-2025/abstracts/38886d70-34f8-4750-98ae-d465b819c511
 #
-# 2023-2025 INSPIRE
+## 2023-2025 INSPIRE
 ## INSPIRE Websute
 https://artsandscience.usask.ca/synchrotron-sciences
 https://artsandscience.usask.ca/synchrotron-sciences/about.php
@@ -112,7 +119,7 @@ https://artsandscience.usask.ca/synchrotron-sciences/news.php
 https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire_newsletter_oct23-small.pdf
 https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire-newsletter-may-2024.pdf
 #
-# 2024 Canadian Light Source Jobs
+## 2024 Canadian Light Source Jobs
 # https://lightsources.org/job/associate-scientist-brockhouse-beamlines/
 # https://www.northstarats.com/Canadian-Light-Source/Associate-Scientist-Brockhouse-Beamlines/79786
 # https://lightsources.org/job/associate-scientist-sxrmb-beamline/
@@ -121,9 +128,9 @@ https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire-newslette
 # https://www.northstarats.com/Canadian-Light-Source/Associate-Scientist-Mid-IR-Beamline/80376
 # https://www.northstarats.com/Canadian-Light-Source/Scientist-or-Senior-Scientist-for-BMIT-X-ray-microCT-Beamlines/86224
 #
-# 2024 U of S Spring Convocation
+## 2024 U of S Spring Convocation
 https://students.usask.ca/documents/convocation/spring-2024.pdf
 #
-# 2025 Images of Research Competition
+## 2025 Images of Research Competition
 http://wshe.es/1X0gTt2A
 https://usask.wishpondpages.com/usask-research-in-action-2025/entries/206827212
