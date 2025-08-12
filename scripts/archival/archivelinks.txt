@@ -1,33 +1,11 @@
 # 2015-2017 Ryerson
-## 2015-2017 Deans's List
 https://www.torontomu.ca/science/current-undergraduate-students/deans-list
 https://www.torontomu.ca/science/current-undergraduate-students/deans-list/#!accordion-1610636196021-2016-2017
-# https://docs.google.com/document/d/10lDJ38fYNiv22JZKmGDHpri_PUqEWISLnUgpm2lt6Qo/edit
 https://www.torontomu.ca/content/dam/science/Images/PDF/Dean's%20List%202015-2016.pdf
-#
-## 2017 Ryerson Spring Convocation
 https://www.torontomu.ca/content/dam/convocation/program/FOS_Spring_2017.pdf
 #
 #
 # 2017-2019 Western
-## 2017-2019 xMR Websites
-# https://xmr.physics.uwo.ca/
-# https://xmrlabs.com/
-#
-## 2017-2018 UWO Physics and Astronomy
-# http://www.physics.uwo.ca/people/graduate_students.html
-https://www.physics.uwo.ca/people/graduate_students/index.html
-https://physics.uwo.ca/news_events/archive/2018_2019/atrium_abuzz_for_fall_preview_day_.html
-#
-## 2018-2019 UWO Medical Biophysics
-https://www.schulich.uwo.ca/biophysics/people/grad_students.html
-#
-## 2019 personal website
-# https://publish.uwo.ca/~xding57
-# https://publish.uwo.ca/~cbrow247
-# https://publish.uwo.ca/~elessar
-#
-## 2019 MRIdt
 https://mridt.com/
 https://mridt.com/about/
 https://mridt.com/services/
@@ -36,7 +14,6 @@ https://mridt.com/iso-17025/
 https://mridt.com/blog/
 https://mridt.com/contact/
 https://mridt.com/category/mri-service/
-# MRIdt blogposts
 https://mridt.com/2023/09/26/why-is-astm-f2503-23-important/
 https://mridt.com/2023/11/14/importance-of-astm-f2119-07/
 https://mridt.com/2023/12/28/importance-of-astm-f2182-19/
@@ -50,16 +27,11 @@ https://mridt.com/2024/08/09/the-future-of-cardiac-devices-in-mri-environments-t
 https://mridt.com/2024/09/10/understanding-the-testing-process-from-medical-device-submission-to-mri-safety-certification/
 https://mridt.com/2024/10/08/the-impact-of-mri-safe-devices-on-patient-care-and-diagnostic-precision/
 https://mridt.com/2024/11/11/behind-the-scenes-at-mridt/
-#
-# 2019 Conferences
-https://www.imno.ca/sites/default/files/ImNO2019Proceedings.pdf
+https://www.igtximno.ca/wp-content/uploads/2024/09/ImNO2019Proceedings.pdf
 https://cds.ismrm.org/protected/19MProceedings/PDFfiles/1441.html
-#
-# 2019 Western Fall Convocation
 #
 #
 # 2020 Covid Year
-## 2020 Erica
 https://www.oise.utoronto.ca/depelab/members/
 https://canadianscholars.ca/book/leadership-for-flourishing-in-educational-contexts/
 https://www.erudit.org/en/journals/ijtdc/2022-v10-n1-2-ijtdc08046/1099962ar.pdf
@@ -68,39 +40,12 @@ https://medium.com/jcacs-musings/when-everything-falls-to-dust-what-do-you-remem
 https://medium.com/jcacs-musings/wide-awakeness-manifesting-from-workplace-conversations-in-a-covid-19-context-ac41c728ca0d
 https://medium.com/jcacs-musings/adjusting-to-new-norms-and-unlearning-them-at-the-same-time-managing-our-expectations-and-finding-c61451d6e03b
 https://medium.com/jcacs-musings/creating-new-meaningless-societal-norms-showing-compassion-by-saying-thank-you-even-when-you-do-7773a638ed98
+https://www.igtximno.ca/wp-content/uploads/2024/09/ImNO2020Proceedings.pdf
+https://cds.ismrm.org/protected/20MProceedings/PDFfiles/4214.html
+https://cds.ismrm.org/protected/20MProceedings/PDFfiles/4186.html
 #
 #
 # 2020-2025 Saskatchewan
-## 2020-2025 Conferences
-## 2020 ImNO
-https://www.imno.ca/sites/default/files/ImNO2020Proceedings.pdf
-https://www.imno.ca/sites/default/files/ImNO2020Proceedings.pdf
-## 2020 ISMRM
-https://cds.ismrm.org/protected/20MProceedings/PDFfiles/4214.html
-https://cds.ismrm.org/protected/20MProceedings/PDFfiles/4186.html
-## 2021 ImNO
-https://www.imno.ca/sites/default/files/ImNO2021Proceedings-final.pdf
-## 2021 ABBME
-https://schulich.ucalgary.ca/sites/default/files/teams/1/22nd%20AB%20BME%20Conference%202021%20-%20LONG.pdf
-## 2022 CCEC
-https://www.xcdsystem.com/cic/program/5iXyWiQ/index.cfm?pgid=2778&sid=25672&abid=95190
-## 2022 CCEC Poster Award
-https://www.cheminst.ca/conference/canadian-chemical-engineering-conference-2022/students-2/graduate-student-poster-competition-winners/
-## 2023 IADR
-https://iadr.abstractarchives.com/abstract/52am-3816292/dentinal-microcracks-and-endodontics-a-longitudinal-study-using-synchrotron-computed-tomography
-## 2023 Biofabrication
-# https://az659834.vo.msecnd.net/eventsaircancprod/production-venuewest-public/e74e64a9291549d6b857e9b1c6885e6f
-# https://az659834.vo.msecnd.net/eventsaircancprod/production-venuewest-public/8ffca94ad4dd4556a3c1d2c950afe9f5
-# https://az659834.vo.msecnd.net/eventsaircancprod/production-venuewest-public/70ef0e6199ab45e3952d795777fac81f
-## 2025 CMBEC
-https://proceedings.cmbes.ca/index.php/proceedings/article/view/1223
-https://proceedings.cmbes.ca/index.php/proceedings/article/view/1223/1075
-## 2025 PALSA
-https://event.fourwaves.com/palsa-2025/abstracts/f596ef59-b60f-41c9-ba3a-0cc91b1818d8
-https://event.fourwaves.com/palsa-2025/abstracts/38886d70-34f8-4750-98ae-d465b819c511
-#
-## 2023-2025 INSPIRE
-## INSPIRE Websute
 https://artsandscience.usask.ca/synchrotron-sciences
 https://artsandscience.usask.ca/synchrotron-sciences/about.php
 https://artsandscience.usask.ca/synchrotron-sciences/training-program/graduate-students.php
@@ -118,19 +63,18 @@ https://artsandscience.usask.ca/synchrotron-sciences/news.php
 ## INSPIRE Newsletters
 https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire_newsletter_oct23-small.pdf
 https://artsandscience.usask.ca/synchrotron-sciences/documents/inspire-newsletter-may-2024.pdf
-#
-## 2024 Canadian Light Source Jobs
-# https://lightsources.org/job/associate-scientist-brockhouse-beamlines/
-# https://www.northstarats.com/Canadian-Light-Source/Associate-Scientist-Brockhouse-Beamlines/79786
-# https://lightsources.org/job/associate-scientist-sxrmb-beamline/
-# https://www.northstarats.com/Canadian-Light-Source/Associate-Scientist-SXRMB-Beamline/79933
-# https://lightsources.org/job/associate-scientist-mid-ir-beamline/
-# https://www.northstarats.com/Canadian-Light-Source/Associate-Scientist-Mid-IR-Beamline/80376
-# https://www.northstarats.com/Canadian-Light-Source/Scientist-or-Senior-Scientist-for-BMIT-X-ray-microCT-Beamlines/86224
-#
-## 2024 U of S Spring Convocation
-https://students.usask.ca/documents/convocation/spring-2024.pdf
-#
-## 2025 Images of Research Competition
+https://www.igtximno.ca/wp-content/uploads/2024/09/ImNO2021Proceedings.pdf
+https://schulich.ucalgary.ca/sites/default/files/teams/1/22nd%20AB%20BME%20Conference%202021%20-%20LONG.pdf
+https://www.xcdsystem.com/cic/program/5iXyWiQ/index.cfm?pgid=2778&sid=25672&abid=95190
+https://www.cheminst.ca/conference/canadian-chemical-engineering-conference-2022/students-2/graduate-student-poster-competition-winners/
+https://iadr.abstractarchives.com/abstract/52am-3816292/dentinal-microcracks-and-endodontics-a-longitudinal-study-using-synchrotron-computed-tomography
+https://xfding57.github.io/media/BG2/conference-abstracts/2023-ICB-DingXF.pdf
+https://xfding57.github.io/media/BG2/conference-abstracts/2023-ICB-DuanX.pdf
+https://xfding57.github.io/media/BG2/conference-abstracts/2023-ICB-LiN.pdf
+https://proceedings.cmbes.ca/index.php/proceedings/article/view/1223
+https://proceedings.cmbes.ca/index.php/proceedings/article/view/1223/1075
+https://event.fourwaves.com/palsa-2025/abstracts/f596ef59-b60f-41c9-ba3a-0cc91b1818d8
+https://event.fourwaves.com/palsa-2025/abstracts/38886d70-34f8-4750-98ae-d465b819c511
 http://wshe.es/1X0gTt2A
 https://usask.wishpondpages.com/usask-research-in-action-2025/entries/206827212
+https://students.usask.ca/documents/convocation/spring-2024.pdf
