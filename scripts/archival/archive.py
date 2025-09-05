@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 run = 1
 
-for i in range(int(np.random.randint(4, size=1))):
+for i in range(np.random.randint(0, 4)):  # This returns a scalar, not an array
 	print(i)
 	if run == 1:
 		with open('archivelinks.txt', 'r') as file:
