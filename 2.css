@@ -201,6 +201,8 @@ a:active {
 .slideshow-img {
   display:block;
   height:500px;
+  width: auto;
+  max-width: 100%;
   margin:auto;
 }
 .slideshow-img-line {
@@ -217,6 +219,9 @@ a:active {
 .slideshow-container {
   position:relative;
   height:auto;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   margin:auto;
 }
 .dot {
