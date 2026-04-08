@@ -114,10 +114,11 @@ body {
 /* ================================= FOOTER ================================= */
 
 .FooterBox {
-  position:absolute;
+  position: relative;      /* change from absolute to relative */
   left:0%;
   right:0%;
-  width:100%;
+  width: 100vw;            /* full viewport width instead of 100% */
+  margin-left: calc(-50vw + 50%);  /* pulls it to the left edge of the screen */
   height:auto;
   padding-top:100px;
   padding-bottom:10px;
