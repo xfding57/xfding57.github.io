@@ -122,21 +122,24 @@
                         <p align="justify">
                             Using the established dynamic CT analysis strategies, the technique was then used to study the mechanical rebound of compressed hydrogel scaffolds.
                         </p>
+                        <p align="justify">
+                            The hydrogel scaffold was compressed using a custom, X-ray-transparent compression device mounted on the CT rotation stage. A screw-driven piston compressed the scaffold to a set strain level. When the piston was released, the scaffold was free to rebound while the scan continued, capturing the recovery process in situ.
+                        </p>
                         <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/hydrogelrebound_schematic.jpg">
                         <p align="justify">
-                            <!-- Paragraph -->
+                            The clip below shows the hydrogel scaffold rebounding after compression, reconstructed from the dynamic CT data. Watch how the internal pore network reopens as the material recovers. This a process that happens too quickly for conventional lab-based CT scanners to resolve.
                         </p>
                         <video controls style="display:block; width:90%; height:auto; margin:auto"><source src="media/BG3_usask/hydrogelrebound_110ms-PR2000-XZ.mp4"></video>
                         <p align="justify">
-                            <!-- Paragraph -->
+                            To quantify the rebound, longitudinal cross-sections of the scaffold were extracted at regular time intervals. Because the scaffold's strand network is highly interconnected, a consistent boundary was defined along the outermost strands in each slice, ensuring the internal porosity was measured the same way at every time point. This same boundary criterion was then applied slice-by-slice to track changes in overall scaffold volume.
                         </p>
                         <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/hydrogelrebound_areasofinterest.jpg">
                         <p align="justify">
-                            <!-- Paragraph -->
+                            Two longitudinal cross-sectional planes (XZ and YZ) were tracked through the scaffold volume, and their porosity was measured at regular intervals over a 9-minute rebound period. Porosity increased steadily in both planes as the compressed pores reopened, consistent with elastic recovery. Interestingly, the two planes recovered at slightly different rates — a sign that the scaffold's pore architecture doesn't respond identically in every direction, likely reflecting its underlying strand geometry.
                         </p>
                         <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/hydrogelrebound_slices.jpg">
                         <p align="justify">
-                            <!-- Paragraph -->
+                            Beyond individual cross-sections, the full 3D scaffold volume was reconstructed at five time points spanning pre-compression through 9 minutes of rebound. This volumetric view shows the complete structural recovery in three dimensions, capturing not just how porosity changes but how the scaffold's overall shape and size evolve as it relaxes, including some swelling beyond its original pre-compression volume.
                         </p>
                         <div class="slideshow-container">
                             <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/hydrogelrebound_volumes-v2.jpg"></div>
@@ -164,13 +167,16 @@
                         <p align="justify">
                             So this project aimed towards integrating two ways of processing PBI-&mu;CT images. The first is called edge enhanced contrast (EEC) and the second is phase retrieval (PR). EEC is great for delineating boundaries while PR is great for area. They both have their detriments. EEC is noisy and PR is a low-pass filter, boundaries are often over-smoothed, and TIE-Hom is most effective for a single homogeneous material. 
                         </p>
-                        <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/edgeview_setup.jpg">
                         <p align="justify">
-                            <!-- Paragraph -->
+                            Turning raw phase contrast projections into a usable image requires two stages of processing. Denoising and phase retrieval are each performed on the same raw dataset, and the resulting image pairs are then used to train a convolutional neural network, the core of the EVEPR method. The flowchart below outlines this pipeline, from raw X-ray projections through to the final enhanced image. 
+                        </p>
+                        <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/edgeview_setup-v2.jpg">
+                        <p align="justify">
+                            As the CNN trains, it gradually learns to combine the sharp edge detail of the EEC image with the consistent area contrast of the phase-retrieved image. The clip below shows how the model's predicted output evolves over the course of training, as the low-density hydrogel scaffold becomes progressively more distinguishable from its surroundings, a visual snapshot of the network converging toward the enhanced EVEPR result.
                         </p>
                         <video controls style="display:block; width:90%; height:auto; margin:auto"><source src="media/BG3_usask/edgeview_trainingloss-v2.mp4"></video>
                         <p align="justify">
-                            <!-- Paragraph -->
+                            To confirm that EVEPR was a genuine improvement and not just a visual one, its output was benchmarked against five other processing methods, including multiple phase retrieval algorithms and standard EEC images, using signal-to-noise and contrast-to-noise ratio as objective metrics. The results, along with the segmentation accuracy each method enabled, are compared below.
                         </p>
                         <div class="slideshow-container">
                             <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/edgeview_sc3_binary.jpg"></div>
@@ -182,7 +188,7 @@
                             </div>
                         </div>
                         <p align="justify">
-                            <!-- Paragraph -->
+                            As a real-world test, EVEPR was applied to ex vivo images of a hydrogel construct implanted in a rat hindlimb near the sciatic nerve, a far more complex imaging scenario involving multiple overlapping tissue types. The comparison below shows how denoised EEC, standard phase retrieval, and EVEPR each handle this multi-material sample, along with a full 3D reconstruction showing the hydrogel construct, its protective stent, the sciatic nerve, and surrounding bone.
                         </p>
                         <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/edgeview_exvivo.jpg">
                         <br>
@@ -193,21 +199,50 @@
                 <div style="line-height:normal">
                     <div class="ToggleMessage fade" id="Toggle-laplacian">
                         <p align="justify">
-                            <!-- Paragraph -->
+                            This study builds on our earlier work developing EVEPR, a deep learning method for enhancing phase contrast CT images. While EVEPR showed strong results, its multi-step training process added complexity and computational cost. Here, we introduce Features2Contrast, a streamlined, self-supervised method that denoises images, suppresses sparse-view artefacts, and enhances phase retrieval contrast all within a single training step, extending the approach to new biomedical applications.
                         </p>
-                        <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/laplacian_imageprocessing.jpg">
+                       <p align="justify">
+                            Rather than relying on a separately denoised image as in our earlier work, Features2Contrast trains a neural network directly on three complementary versions of the same raw dataset split so that no two versions share the same noise or sampling pattern. This shared-but-different structure gives the network everything it needs to simultaneously clean up noise, suppress artefacts, and sharpen contrast in one pass. The processing pipeline is outlined below.
+                        </p>
+                        <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/laplacian_imageprocessing-v2.jpg">
                         <p align="justify">
-                            <!-- Paragraph -->
+                            Before testing on real biological samples, Features2Contrast was benchmarked on a resolution phantom to  quantify its performance. These tests evaluated  how well the method reduces noise, how effectively it suppresses artefacts caused by using fewer X-ray projections, and how much of the underlying spatial resolution is preserved or even recovered in the process.
                         </p>
-                        <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/laplacian_trainingarchitecture.jpg">
+                        <div class="slideshow-container">
+                            <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/laplacian_resolution-noise.jpg"></div>
+                            <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/laplacian_resolution-sparse.jpg"></div>
+                            <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/laplacian_resolution-mtf.jpg"></div>
+                            <br>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, slideshow)"></span>
+                                <span class="dot" onclick="currentSlide(2, slideshow)"></span>
+                                <span class="dot" onclick="currentSlide(3, slideshow)"></span>
+                            </div>
+                        </div>
                         <p align="justify">
-                            <!-- Paragraph -->
+                            Moving to a real biological sample, Features2Contrast was applied to an in vivo hydrogel scaffold implanted within a protective stent and surrounded by muscle tissue and body fluid. The comparison below shows how Features2Contrast reveals the scaffold's material boundaries, internal pores, and even the surrounding muscle fibers, detail that is largely lost in conventional processing.
                         </p>
-                        <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/laplacian_inputtargetoutput.jpg">
+                        <div class="slideshow-container">
+                            <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/laplacian_exvivo1.jpg"></div>
+                            <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/laplacian_exvivo2.jpg"></div>
+                            <br>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, slideshow)"></span>
+                                <span class="dot" onclick="currentSlide(2, slideshow)"></span>
+                            </div>
+                        </div>
                         <p align="justify">
-                            <!-- Paragraph -->
+                            As a further test of its versatility, Features2Contrast was applied to a fluid-filled cochlea sample, where thin, soft membrane structures are notoriously difficult to distinguish from the surrounding fluid and dense surrounding bone. The results below show how the method recovers these membrane signals while still preserving the surrounding anatomical context. These details could not be resolved with conventional edge-enhanced nor phase-retrieved images.
                         </p>
-                        <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/laplacian_exvivocomparison.jpg">
+                        <div class="slideshow-container">
+                            <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/laplacian_cochlear1.jpg"></div>
+                            <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/laplacian_cochlear2.jpg"></div>
+                            <br>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1, slideshow)"></span>
+                                <span class="dot" onclick="currentSlide(2, slideshow)"></span>
+                            </div>
+                        </div>
                         <br>
                         <br>
                     </div>
@@ -216,15 +251,14 @@
                 <div style="line-height:normal">
                     <div class="ToggleMessage fade" id="Toggle-application">
                         <p align="justify">
-                            <!-- Paragraph -->
+                            This study brings together everything learned from our earlier imaging and processing work in order to study what actually happens to a hydrogel scaffold once it's implanted in living tissue? Using synchrotron-based phase contrast CT, we tracked alginate-gelatin scaffolds implanted at a nerve injury site in a rat model over the first four days after surgery.
                         </p>
-                        <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/application_implant-v2.jpg">
                         <p align="justify">
-                            <!-- Paragraph -->
+                            To capture genuine physiological scaffold behavior, hydrogel scaffolds were surgically implanted at the site of a sciatic nerve injury in rats, protected within a spiral-shaped stent and sutured directly to the nerve. The diagram below outlines this implantation procedure and the resulting animal model used for imaging.
                         </p>
-                        <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/application_denoising-v3.jpg">
+                        <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/application_implant-v3.jpg">
                         <p align="justify">
-                            <!-- Paragraph -->
+                            Scanning the same type of implant at three time points, immediately after implantation, two days, and four days, revealed a clear and progressive story: the scaffold swells substantially, losing much of its open pore structure within just four days. Comparing fresh versus formalin-fixed tissue at each time point also showed that fixation itself subtly alters the material, reinforcing the importance of imaging fresh tissue to capture what's truly happening inside the body.
                         </p>
                         <div class="slideshow-container">
                             <div class="slideshow fade"><img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/application_longitudinal_results-v2.jpg"></div>
@@ -238,12 +272,9 @@
                             </div>
                         </div>
                         <p align="justify">
-                            <!-- Paragraph -->
+                            Segmenting the scaffold in three dimensions made it possible to precisely quantify this transformation. The scaffold's well-defined grid and open pores at implantation gradually give way to a dense, consolidated mass by day four, with both porosity and individual pore size dropping sharply. The 3D renderings and accompanying measurements below capture this structural evolution across all three time points
                         </p>
                         <img class="slideshow-img" style="width:90%; height:auto" src="media/BG3_usask/application_invivo_segment.jpg">
-                        <p align="justify">
-                            <!-- Paragraph -->
-                        </p>
                         <br>
                         <br>
                     </div>
